@@ -12,8 +12,12 @@ async function main() {
     //   defaultType: 'future',
     // },
   });
-  const watcher = new TickerWatcher(binance, ['BTCUSDT'], (ticker) => {
-    console.log(ticker);
+  const watcher = new TickerWatcher(binance, ['BTC/USDT', 'ADA/USDT', 'ADA/BTC'], (ticker) => {
+    console.log(
+      'BTC/USDT', ticker['BTC/USDT'].close,
+      'ADA/USDT', ticker['ADA/USDT'].close,
+      'ADA/BTC', ticker['ADA/BTC'].close,
+    );
   }, 1000);
   watcher.Start();
 }

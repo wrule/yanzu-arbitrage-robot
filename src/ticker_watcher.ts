@@ -3,14 +3,14 @@ import fs from 'fs';
 import moment from 'moment';
 
 export
-type TickerCallback = (ticker: Ticker) => void;
+type TickerCallback = (ticker: ccxt.Dictionary<ccxt.Ticker>) => void;
 
 export
 class TickerWatcher {
   public constructor(
     private readonly exchange: ccxt.binance,
-    private readonly symbol: string,
-    private readonly callback?: (ticker: Ticker) => void,
+    private readonly symbols: string[],
+    private readonly callback?: TickerCallback,
     private readonly interval: number = 5000,
   ) { }
 
@@ -19,7 +19,7 @@ class TickerWatcher {
   private async loopQuery() {
     clearTimeout(this.timer);
     try {
-      const result = await this.exchange.fetchTicker(this.symbol);
+      const result = await this.exchange.fetchTickers(this.symbols);
       if (this.callback) {
         this.callback(result);
       } else {
@@ -32,7 +32,7 @@ class TickerWatcher {
         `[${
           moment().format('YYYY-MM-DD HH:mm:ss:SSS')
         }][${
-          this.symbol
+          this.symbols.join(', ')
         }-${
           this.interval
         }]:\n${e}\n`);

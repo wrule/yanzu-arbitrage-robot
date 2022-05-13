@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.33.tgz#3c1879b276dc63e73030bb91165e62a4509cd506"
   integrity sha512-miWq2m2FiQZmaHfdZNcbpp9PuXg34W5JZ5CrJ/BaS70VuhoJENBEQybeiYSaPBRNq6KQGnjfEnc/F3PN++D+XQ==
 
+ccxt@^1.82.28:
+  version "1.82.28"
+  resolved "https://registry.yarnpkg.com/ccxt/-/ccxt-1.82.28.tgz#7ea17aecb72aed1eee01d9e8c3fa3fc5b602323f"
+  integrity sha512-hZFcX1VciH3Tuan8mTXVjZaUmUGGq7BCyuo/rwSe0QFkr0D1rz7+cEgFKU/hOtYJ8nooatRdb+DREbI8qL07vA==
+
 moment@^2.29.3:
   version "2.29.3"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"

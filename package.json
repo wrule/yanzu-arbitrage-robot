@@ -1,0 +1,8 @@
+{
+  "name": "yanzu-arbitrage-robot",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/wrule/yanzu-arbitrage-robot.git",
+  "license": "MIT",
+  "private": false
+}

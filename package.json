@@ -9,5 +9,9 @@
   },
   "repository": "https://github.com/wrule/yanzu-arbitrage-robot.git",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@types/node": "^17.0.33",
+    "moment": "^2.29.3"
+  }
 }

@@ -14,11 +14,6 @@ async function main() {
     // },
   });
 
-
-  const rsp = await binance.hasFetchOrderBooks;
-  console.log(rsp);
-
-
   // const robot = new Robot(
   //   binance,
   //   'usdt',

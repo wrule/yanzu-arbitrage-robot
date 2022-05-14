@@ -1,9 +1,14 @@
 import ccxt from 'ccxt';
 import { TickerWatcher } from './ticker_watcher';
+import { Robot } from './robot';
 
 console.log('你好，世界');
 
 async function main() {
+  const robot = new Robot('usdt', ['btc', 'eth', 'ada', 'link', 'uni', 'dent', 'fil']);
+
+  return;
+
   const binance = new ccxt.binance({
     // apiKey: Secret.API_KEY,
     // secret: Secret.SECRET_KEY,

@@ -1,4 +1,5 @@
 import ccxt, { Market } from 'ccxt';
+import { TickerWatcher } from './ticker_watcher';
 
 export
 class Robot {
@@ -16,6 +17,10 @@ class Robot {
     const possible_symbols = this.allPairs();
     const legal_symbols = possible_symbols.filter((symbol) => market_symbols.includes(symbol));
     console.log(legal_symbols);
+    const watcher = new TickerWatcher(this.exchange, legal_symbols, (dict) => {
+      console.log(1);
+    }, 1000);
+    watcher.Start();
   }
 
   private allPairs() {

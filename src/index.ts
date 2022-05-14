@@ -23,15 +23,6 @@ async function main() {
 
 
   return;
-  const watcher = new TickerWatcher(binance, ['DOGE/USDT', 'SHIB/USDT', 'SHIB/DOGE'], (ticker) => {
-    const a = ticker['DOGE/USDT'].close as number;
-    const b = ticker['SHIB/USDT'].close as number;
-    const c = ticker['SHIB/DOGE'].close as number;
-    const d = a * c;
-    const e = (d - b) / b;
-    console.log(b, d, e * 100);
-  }, 1000);
-  watcher.Start();
 }
 
 main();

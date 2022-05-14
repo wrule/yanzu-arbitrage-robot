@@ -13,12 +13,18 @@ async function main() {
     //   defaultType: 'future',
     // },
   });
-  const robot = new Robot(
-    binance,
-    'usdt',
-    ['btc', 'eth', 'ada', 'link', 'uni', 'dent', 'fil'],
-  );
-  robot.Start();
+
+
+  const rsp = await binance.hasFetchOrderBooks;
+  console.log(rsp);
+
+
+  // const robot = new Robot(
+  //   binance,
+  //   'usdt',
+  //   ['btc', 'eth', 'ada', 'link', 'uni', 'dent', 'fil'],
+  // );
+  // robot.Start();
 
 
   return;

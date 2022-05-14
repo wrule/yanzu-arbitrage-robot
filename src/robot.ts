@@ -1,12 +1,21 @@
+import ccxt, { Market } from 'ccxt';
 
 export
 class Robot {
   public constructor(
+    private readonly exchange: ccxt.binance,
     private readonly base: string,
     private readonly coins: string[],
-  ) {
-    this.pairs = this.allPairs();
-    console.log(this.pairs);
+  ) { }
+
+  private markets: Market[] = [];
+
+  private async init() {
+    const markets = await this.exchange.fetchMarkets();
+    const market_symbols = markets.map((market) => market.symbol.toUpperCase());
+    const possible_symbols = this.allPairs();
+    const legal_symbols = possible_symbols.filter((symbol) => market_symbols.includes(symbol));
+    console.log(legal_symbols);
   }
 
   private allPairs() {
@@ -24,7 +33,7 @@ class Robot {
   private pairs: string[] = [];
 
   public Start() {
-
+    this.init();
   }
 
   public Stop() {

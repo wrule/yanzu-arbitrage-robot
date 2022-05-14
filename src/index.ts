@@ -5,10 +5,6 @@ import { Robot } from './robot';
 console.log('你好，世界');
 
 async function main() {
-  const robot = new Robot('usdt', ['btc', 'eth', 'ada', 'link', 'uni', 'dent', 'fil']);
-
-  return;
-
   const binance = new ccxt.binance({
     // apiKey: Secret.API_KEY,
     // secret: Secret.SECRET_KEY,
@@ -17,6 +13,15 @@ async function main() {
     //   defaultType: 'future',
     // },
   });
+  const robot = new Robot(
+    binance,
+    'usdt',
+    ['btc', 'eth', 'ada', 'link', 'uni', 'dent', 'fil'],
+  );
+  robot.Start();
+
+
+  return;
   const watcher = new TickerWatcher(binance, ['DOGE/USDT', 'SHIB/USDT', 'SHIB/DOGE'], (ticker) => {
     const a = ticker['DOGE/USDT'].close as number;
     const b = ticker['SHIB/USDT'].close as number;

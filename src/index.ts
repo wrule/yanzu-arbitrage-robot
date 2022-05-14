@@ -3,6 +3,12 @@ import { TickerWatcher } from './ticker_watcher';
 import { Robot } from './robot';
 
 async function main() {
+
+
+
+
+
+
   // const binance = new ccxt.binance({
     // apiKey: Secret.API_KEY,
     // secret: Secret.SECRET_KEY,

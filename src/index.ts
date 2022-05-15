@@ -14,14 +14,16 @@ async function main() {
     message: (data: any) => {
       console.log(data);
       const jsonObject = JSON.parse(data);
-      fs.writeFileSync('1.json', JSON.stringify(jsonObject, null, 2));
+      fs.writeFileSync('3.json', JSON.stringify(jsonObject, null, 2));
       // const jsonObject = JSON.parse(data);
       // console.log(jsonObject.p);
     },
   }
   // client.aggTradeWS('btcusdt', callbacks)
   // client.partialBookDepth('btcusdt', 5, '1000ms', callbacks);
-  client.bookTickerWS('btcusdt', callbacks);
+  // client.bookTickerWS('btcusdt', callbacks);
+  // client.diffBookDepth('btcusdt', '100ms', callbacks);
+  client.partialBookDepth('btcusdt', 5, '100ms', callbacks);
 
   // unsubscribe the stream above
   // setTimeout(() => client.unsubscribe(aggTrade), 3000)

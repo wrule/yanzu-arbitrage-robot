@@ -39,10 +39,11 @@ class Robot {
       close: () => this.client.logger.log('closed'),
       message: (data: any) => {
         const jsonObject = JSON.parse(data);
-        console.log(jsonObject.s);
+        console.log(jsonObject.data);
       },
     };
-    this.client.aggTradeWS('linkusdt', callbacks);
+    this.client.combinedStreams(['btcusdt@depth@100ms'], callbacks);
+    // this.client.aggTradeWS('linkusdt', callbacks);
     // legal_symbols.forEach((symbol) => {
     //   this.client.aggTradeWS(symbol.replace('/', ''), callbacks);
     // });

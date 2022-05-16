@@ -43,7 +43,7 @@ class Robot {
         result.push(`${this.coins[j]}/${this.coins[i]}`.toUpperCase());
       }
     }
-    return result;
+    return Array.from(new Set(result));
   }
 
   private pairs: string[] = [];

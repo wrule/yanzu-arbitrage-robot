@@ -42,9 +42,10 @@ class Robot {
         console.log(jsonObject.s);
       },
     };
-    legal_symbols.forEach((symbol) => {
-      this.client.aggTradeWS(symbol.replace('/', ''), callbacks);
-    });
+    this.client.aggTradeWS('linkusdt', callbacks);
+    // legal_symbols.forEach((symbol) => {
+    //   this.client.aggTradeWS(symbol.replace('/', ''), callbacks);
+    // });
   }
 
   public Stop() {

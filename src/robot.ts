@@ -1,10 +1,10 @@
-import ccxt, { Market } from 'ccxt';
-import { TickerWatcher } from './ticker_watcher';
+import ccxt from 'ccxt';
 
 export
 class Robot {
   public constructor(
     private readonly exchange: ccxt.binance,
+    private readonly client: any,
     private readonly base: string,
     private readonly coins: string[],
   ) { }
@@ -34,6 +34,17 @@ class Robot {
   public async Start() {
     const legal_symbols = await this.legalSymbols();
     console.log(legal_symbols);
+    const callbacks = {
+      open: () => this.client.logger.log('open'),
+      close: () => this.client.logger.log('closed'),
+      message: (data: any) => {
+        const jsonObject = JSON.parse(data);
+        console.log(jsonObject.s);
+      },
+    };
+    legal_symbols.forEach((symbol) => {
+      this.client.aggTradeWS(symbol.replace('/', ''), callbacks);
+    });
   }
 
   public Stop() {

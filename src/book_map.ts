@@ -4,7 +4,7 @@ export
 class BookMap {
   public constructor() { }
 
-  private bookMap = new Map<string, [string, Book]>();
+  private bookMap = new Map<string>();
 
   public Update(symbol: string, book: Book) {
 

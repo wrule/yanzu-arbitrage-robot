@@ -1,8 +1,11 @@
 
 export
+type Order = [number, number];
+
+export
 class Book {
   public constructor(
-    private orders: [number, number][],
+    private orders: Order[],
     private book_time = -1,
     private update_time = Number(new Date()),
   ) { }
@@ -27,7 +30,7 @@ class Book {
     return this.update_time;
   }
 
-  public Update(orders: [number, number][], book_time = -1) {
+  public Update(orders: Order[], book_time = -1) {
     this.orders = orders;
     this.book_time = book_time;
     this.update_time = Number(new Date());

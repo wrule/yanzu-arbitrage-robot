@@ -9,8 +9,6 @@ class Robot {
     private readonly coins: string[],
   ) { }
 
-  private markets: Market[] = [];
-
   private possibleSymbols() {
     const result: string[] = [];
     result.push(...(
@@ -32,8 +30,6 @@ class Robot {
     const legal_symbols = possible_symbols.filter((symbol) => market_symbols.includes(symbol));
     return legal_symbols;
   }
-
-  private pairs: string[] = [];
 
   public async Start() {
     const legal_symbols = await this.legalSymbols();

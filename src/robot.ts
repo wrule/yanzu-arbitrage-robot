@@ -11,19 +11,6 @@ class Robot {
 
   private markets: Market[] = [];
 
-  private async init() {
-    const markets = await this.exchange.fetchMarkets();
-    const market_symbols = markets.map((market) => market.symbol.toUpperCase());
-    const possible_symbols = this.possibleSymbols();
-    const legal_symbols = possible_symbols.filter((symbol) => market_symbols.includes(symbol));
-    console.log(legal_symbols);
-
-    // const watcher = new TickerWatcher(this.exchange, legal_symbols, (dict) => {
-    //   console.log(1);
-    // }, 1000);
-    // watcher.Start();
-  }
-
   private possibleSymbols() {
     const result: string[] = [];
     result.push(...(
@@ -38,10 +25,19 @@ class Robot {
     return Array.from(new Set(result));
   }
 
+  private async legalSymbols() {
+    const markets = await this.exchange.fetchMarkets();
+    const market_symbols = markets.map((market) => market.symbol.toUpperCase());
+    const possible_symbols = this.possibleSymbols();
+    const legal_symbols = possible_symbols.filter((symbol) => market_symbols.includes(symbol));
+    return legal_symbols;
+  }
+
   private pairs: string[] = [];
 
-  public Start() {
-    this.init();
+  public async Start() {
+    const legal_symbols = await this.legalSymbols();
+    console.log(legal_symbols);
   }
 
   public Stop() {

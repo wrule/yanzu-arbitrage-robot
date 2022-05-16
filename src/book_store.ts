@@ -9,6 +9,14 @@ class BookStore {
 
   private store = new Map<string, BookMap>();
 
+  private searchChance() {
+    Array.from(this.store.entries()).forEach(([src_code, book_map]) => {
+      Array.from(book_map.entries()).forEach(([dst_code, book]) => {
+
+      });
+    });
+  }
+
   public Update(
     code: [string, string],
     orders: Order[],

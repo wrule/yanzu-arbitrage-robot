@@ -14,22 +14,33 @@ class Robot {
   private async init() {
     const markets = await this.exchange.fetchMarkets();
     const market_symbols = markets.map((market) => market.symbol.toUpperCase());
+
+
+    // console.log(market_symbols);
+
+
     const possible_symbols = this.allPairs();
-    const legal_symbols = possible_symbols.filter((symbol) => market_symbols.includes(symbol));
-    console.log(legal_symbols);
-    const watcher = new TickerWatcher(this.exchange, legal_symbols, (dict) => {
-      console.log(1);
-    }, 1000);
-    watcher.Start();
+    console.log(possible_symbols);
+    // const legal_symbols = possible_symbols.filter((symbol) => market_symbols.includes(symbol));
+
+
+
+    // console.log(legal_symbols);
+    // const watcher = new TickerWatcher(this.exchange, legal_symbols, (dict) => {
+    //   console.log(1);
+    // }, 1000);
+    // watcher.Start();
   }
 
   private allPairs() {
     const result: string[] = [];
-    const all_coins = Array.from(new Set(this.coins.concat(this.base)));
-    for (let i = 0; i < all_coins.length - 1; ++i) {
-      for (let j = i + 1; j < all_coins.length; ++j) {
-        result.push(`${all_coins[i]}/${all_coins[j]}`.toUpperCase());
-        result.push(`${all_coins[j]}/${all_coins[i]}`.toUpperCase());
+    result.push(...(
+      this.coins.map((coin) => `${coin}/${this.base}`.toUpperCase())
+    ));
+    for (let i = 0; i < this.coins.length - 1; ++i) {
+      for (let j = i + 1; j < this.coins.length; ++j) {
+        result.push(`${this.coins[i]}/${this.coins[j]}`.toUpperCase());
+        result.push(`${this.coins[j]}/${this.coins[i]}`.toUpperCase());
       }
     }
     return result;

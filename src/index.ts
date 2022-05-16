@@ -19,10 +19,10 @@ async function main() {
       // console.log(jsonObject.p);
     },
   }
-  // client.aggTradeWS('btcusdt', callbacks)
+  client.aggTradeWS('btcusdt', callbacks)
   // client.partialBookDepth('btcusdt', 5, '1000ms', callbacks);
   // client.bookTickerWS('btcusdt', callbacks);
-  client.diffBookDepth('btcusdt', '100ms', callbacks);
+  // client.diffBookDepth('ethusdt', '100ms', callbacks);
   // client.partialBookDepth('btcusdt', 5, '100ms', callbacks);
 
   // unsubscribe the stream above

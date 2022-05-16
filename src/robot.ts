@@ -14,25 +14,17 @@ class Robot {
   private async init() {
     const markets = await this.exchange.fetchMarkets();
     const market_symbols = markets.map((market) => market.symbol.toUpperCase());
+    const possible_symbols = this.possibleSymbols();
+    const legal_symbols = possible_symbols.filter((symbol) => market_symbols.includes(symbol));
+    console.log(legal_symbols);
 
-
-    // console.log(market_symbols);
-
-
-    const possible_symbols = this.allPairs();
-    console.log(possible_symbols);
-    // const legal_symbols = possible_symbols.filter((symbol) => market_symbols.includes(symbol));
-
-
-
-    // console.log(legal_symbols);
     // const watcher = new TickerWatcher(this.exchange, legal_symbols, (dict) => {
     //   console.log(1);
     // }, 1000);
     // watcher.Start();
   }
 
-  private allPairs() {
+  private possibleSymbols() {
     const result: string[] = [];
     result.push(...(
       this.coins.map((coin) => `${coin}/${this.base}`.toUpperCase())

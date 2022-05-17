@@ -33,7 +33,11 @@ class Robot {
       .filter((market) => market.status === 'TRADING');
   }
 
-  private watch_markets: string[] = [];
+  private watch_markets: [IMarket, IMarket, IMarket][] = [];
+
+  private get_watch_markets() {
+
+  }
 
   public async Start() {
     this.markets = await this.load_markets();

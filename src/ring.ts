@@ -12,13 +12,18 @@ class Ring {
     // ABCA成交机会检查
     const ab_ask_price = this.ab_market.ASKPriceEst;
     const ac_bid_price = this.ac_market.BIDPriceEst;
-    const bc_ratio_price = ac_bid_price / ab_ask_price;
+    const abca_ratio_price = ac_bid_price / ab_ask_price;
     // 卖C得B商价格
     const bc_ask_price = this.bc_market.ASKPriceEst;
-    const bc_ask_price_ratio = (bc_ratio_price - bc_ask_price) / bc_ratio_price;
+    const bc_ask_price_ratio = (abca_ratio_price - bc_ask_price) / abca_ratio_price;
     if (bc_ask_price_ratio > 0.003) {
       // 发ABCA单
     }
+
+    // ACBA成交机会检查
+    const ac_ask_price = this.ac_market.ASKPriceEst;
+    const ab_bid_price = this.ab_market.BIDPriceEst;
+    const acba_ratio_price = ab_bid_price / ac_ask_price;
   }
 }
 

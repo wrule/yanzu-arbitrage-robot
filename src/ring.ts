@@ -23,7 +23,13 @@ class Ring {
     // ACBA成交机会检查
     const ac_ask_price = this.ac_market.ASKPriceEst;
     const ab_bid_price = this.ab_market.BIDPriceEst;
-    const acba_ratio_price = ab_bid_price / ac_ask_price;
+    const acba_ratio_price = ac_ask_price / ab_bid_price;
+    // 卖B得C商价格
+    const bc_bid_price = this.bc_market.BIDPriceEst;
+    const bc_bid_price_ratio = (bc_bid_price - acba_ratio_price) / acba_ratio_price;
+    if (bc_bid_price_ratio > 0.003) {
+      // 发ACBA单
+    }
   }
 }
 

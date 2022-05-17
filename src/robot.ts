@@ -17,6 +17,8 @@ class Robot {
     return new Map<string, Market>(markets.map((market) => [market.Key, market]));
   }
 
+  private watch_market_map!: Map<string, Market>;
+
   private get_watch_markets() {
     const result = new Map<string, Market>();
     this.pairs.forEach((pair) => {
@@ -39,6 +41,8 @@ class Robot {
 
   public async Start() {
     this.market_map = await this.load_markets();
+    this.watch_market_map = this.get_watch_markets();
     console.log(Array.from(this.market_map.keys()).length);
+    console.log(Array.from(this.watch_market_map.keys()).length);
   }
 }

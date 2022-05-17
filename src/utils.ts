@@ -1,5 +1,7 @@
+export
+type Pair = [string, string];
 
 export
-function symbol_split(symbol: string) {
-  const segs = symbol.split('\\');
+function pair_to_key(pair: Pair) {
+  return pair.slice().sort((a, b) => a.localeCompare(b)).join('/');
 }

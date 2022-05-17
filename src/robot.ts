@@ -46,6 +46,15 @@ class Robot {
     return result;
   }
 
+  private symbol_markets!: Map<string, Market>;
+
+  private get_symbol_markets() {
+    return new Map<string, Market>(
+      Array.from(this.watch_market_map.values())
+        .map((market) => ([market.symbol, market]))
+    );
+  }
+
   private get callbacks() {
     return {
       open: () => this.client.logger.log('open'),
@@ -59,10 +68,12 @@ class Robot {
   public async Start() {
     this.market_map = await this.load_markets();
     this.watch_market_map = this.get_watch_markets();
+    this.symbol_markets = this.get_symbol_markets();
     console.log(this.watch_market_streams);
-    this.combined_streams = this.client.combinedStreams(
-      this.watch_market_streams,
-      this.callbacks,
-    );
+    console.log(Array.from(this.symbol_markets.keys()));
+    // this.combined_streams = this.client.combinedStreams(
+    //   this.watch_market_streams,
+    //   this.callbacks,
+    // );
   }
 }

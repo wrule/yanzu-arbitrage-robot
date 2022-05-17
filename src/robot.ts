@@ -7,33 +7,32 @@ interface IMarket {
   quoteAsset: string;
 }
 
+
 export
 class Robot {
   public constructor(
     private readonly client: any,
     private readonly base: string,
-    private readonly coins: string[] = [],
+    private readonly pairs: [string, string][] = [],
   ) { }
 
-  private markets: IMarket[] = [];
-  private market_all_coins: string[] = [];
-
-  private get_market_all_coins() {
+  private get pairs_coin() {
     const result: string[] = [];
-    this.markets.forEach((market) => {
-      result.push(market.baseAsset);
-      result.push(market.quoteAsset);
+    this.pairs.forEach((pair) => {
+      result.push(pair[0]);
+      result.push(pair[1]);
     });
     return Array.from(new Set(result));
   }
 
+  private markets: IMarket[] = [];
+
   private async load_markets() {
     const rsp = await this.client.exchangeInfo();
-    return (rsp.data.symbols as IMarket[])
-      .filter((market) => market.status === 'TRADING');
+    return rsp.data.symbols as IMarket[];
   }
 
-  private watch_markets: [IMarket, IMarket, IMarket][] = [];
+  private watch_markets: IMarket[] = [];
 
   private get_watch_markets() {
 
@@ -41,8 +40,6 @@ class Robot {
 
   public async Start() {
     this.markets = await this.load_markets();
-    this.market_all_coins = this.get_market_all_coins();
-    console.log(this.market_all_coins.length);
-    // console.log(this.markets[0]);
+    console.log(this.pairs_coin);
   }
 }

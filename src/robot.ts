@@ -44,5 +44,6 @@ class Robot {
     this.watch_market_map = this.get_watch_markets();
     console.log(Array.from(this.market_map.keys()).length);
     console.log(Array.from(this.watch_market_map.keys()).length);
+    console.log(Array.from(this.watch_market_map.values()).map((a) => a.Key));
   }
 }

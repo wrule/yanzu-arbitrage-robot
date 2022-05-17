@@ -7,14 +7,26 @@ interface IMarket {
   quoteAsset: string;
 }
 
+export
+type Pair = [string, string];
 
 export
 class Robot {
   public constructor(
     private readonly client: any,
     private readonly base: string,
-    private readonly pairs: [string, string][] = [],
+    private readonly pairs: Pair[] = [],
   ) { }
+
+  private pairs_equal(pair1: Pair, pair2: Pair) {
+    return (
+      pair1[0] === pair2[0] &&
+      pair1[1] === pair2[1]
+    ) || (
+      pair1[0] === pair2[1] &&
+      pair1[1] === pair2[0]
+    );
+  }
 
   private get pairs_coin() {
     const result: string[] = [];

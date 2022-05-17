@@ -19,6 +19,13 @@ class Robot {
 
   private watch_market_map!: Map<string, Market>;
 
+  private get watch_market_streams() {
+    return Array.from(
+      this.watch_market_map.values())
+        .map((market) => `${market.symbol}@depth@100ms`
+    );
+  }
+
   private get_watch_markets() {
     const result = new Map<string, Market>();
     this.pairs.forEach((pair) => {
@@ -44,6 +51,6 @@ class Robot {
     this.watch_market_map = this.get_watch_markets();
     console.log(Array.from(this.market_map.keys()).length);
     console.log(Array.from(this.watch_market_map.keys()).length);
-    console.log(Array.from(this.watch_market_map.values()).map((a) => a.Key));
+    console.log(this.watch_market_streams);
   }
 }

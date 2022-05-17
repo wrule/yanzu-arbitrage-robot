@@ -46,8 +46,27 @@ class Robot {
 
   private watch_markets: IMarket[] = [];
 
-  private get_watch_markets() {
+  private market_pair(market: IMarket) {
+    return [market.baseAsset, market.quoteAsset] as Pair;
+  }
 
+  private try_push_watch_markets(market: IMarket) {
+    if (
+      this.watch_markets.every(
+        (item) =>
+          !this.pairs_equal(this.market_pair(item), this.market_pair(market))
+      )
+    ) {
+      this.watch_markets.push(market);
+    }
+  }
+
+  private get_watch_markets() {
+    const result: IMarket[] = [];
+    this.pairs.forEach((pair) => {
+
+    });
+    return result;
   }
 
   public async Start() {

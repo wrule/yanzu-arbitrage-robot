@@ -1,4 +1,3 @@
-
 export
 class Robot {
   public constructor(
@@ -6,4 +5,8 @@ class Robot {
     private readonly base: string,
     private readonly coins: string[],
   ) { }
+
+  public async Start() {
+    console.log('开始');
+  }
 }

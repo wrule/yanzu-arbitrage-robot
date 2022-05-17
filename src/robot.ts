@@ -17,6 +17,26 @@ class Robot {
     return new Map<string, Market>(markets.map((market) => [market.Key, market]));
   }
 
+  private get_watch_markets() {
+    const result = new Map<string, Market>();
+    this.pairs.forEach((pair) => {
+      const keys = [
+        pair_to_key(pair),
+        pair_to_key([pair[0], this.base]),
+        pair_to_key([pair[1], this.base]),
+      ];
+      if (keys.every((key) => this.market_map.has(key))) {
+        keys.forEach((key) => {
+          const market = this.market_map.get(key) as Market;
+          if (!result.has(key)) {
+            result.set(key, market);
+          }
+        });
+      }
+    });
+    return result;
+  }
+
   public async Start() {
     this.market_map = await this.load_markets();
     console.log(Array.from(this.market_map.keys()).length);

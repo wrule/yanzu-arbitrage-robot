@@ -1,5 +1,5 @@
 import { Market } from './market';
-import { Pair } from './utils';
+import { Pair, pair_to_key } from './utils';
 
 export
 class Robot {

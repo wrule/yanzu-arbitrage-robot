@@ -30,9 +30,9 @@ class Robot {
     const result = new Map<string, Market>();
     this.pairs.forEach((pair) => {
       const keys = [
-        pair_to_key(pair),
         pair_to_key([pair[0], this.base]),
         pair_to_key([pair[1], this.base]),
+        pair_to_key(pair),
       ];
       if (keys.every((key) => this.market_map.has(key))) {
         keys.forEach((key) => {
@@ -71,6 +71,7 @@ class Robot {
     this.symbol_markets = this.get_symbol_markets();
     console.log(this.watch_market_streams);
     console.log(Array.from(this.symbol_markets.keys()));
+    console.log(Array.from(this.symbol_markets.values())[0]);
     // this.combined_streams = this.client.combinedStreams(
     //   this.watch_market_streams,
     //   this.callbacks,

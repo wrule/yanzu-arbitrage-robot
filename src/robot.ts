@@ -19,5 +19,6 @@ class Robot {
 
   public async Start() {
     this.market_map = await this.load_markets();
+    console.log(Array.from(this.market_map.keys()).length);
   }
 }

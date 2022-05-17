@@ -46,11 +46,23 @@ class Robot {
     return result;
   }
 
+  private get callbacks() {
+    return {
+      open: () => this.client.logger.log('open'),
+      close: () => this.client.logger.log('closed'),
+      message: (data: any) => this.client.logger.log(data),
+    };
+  }
+
+  private combined_streams: any = null;
+
   public async Start() {
     this.market_map = await this.load_markets();
     this.watch_market_map = this.get_watch_markets();
-    console.log(Array.from(this.market_map.keys()).length);
-    console.log(Array.from(this.watch_market_map.keys()).length);
     console.log(this.watch_market_streams);
+    this.combined_streams = this.client.combinedStreams(
+      this.watch_market_streams,
+      this.callbacks,
+    );
   }
 }

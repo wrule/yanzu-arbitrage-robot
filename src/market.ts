@@ -29,4 +29,12 @@ class Market {
   public get quoteAsset() {
     return this.data.quoteAsset as string;
   }
+
+  public get BIDPriceEst() {
+    return 0;
+  }
+
+  public get ASKPriceEst() {
+    return 0;
+  }
 }

@@ -59,7 +59,9 @@ class Robot {
     return {
       open: () => this.client.logger.log('open'),
       close: () => this.client.logger.log('closed'),
-      message: (data: any) => this.client.logger.log(data),
+      message: (data: any) => {
+        // console.log(data);
+      },
     };
   }
 
@@ -70,11 +72,12 @@ class Robot {
     this.watch_market_map = this.get_watch_markets();
     this.symbol_markets = this.get_symbol_markets();
     console.log(this.watch_market_streams);
-    console.log(Array.from(this.symbol_markets.keys()));
-    console.log(Array.from(this.symbol_markets.values())[0]);
-    // this.combined_streams = this.client.combinedStreams(
-    //   this.watch_market_streams,
-    //   this.callbacks,
-    // );
+    // console.log(Array.from(this.symbol_markets.keys()));
+    // console.log(Array.from(this.symbol_markets.values())[0]);
+    this.combined_streams = this.client.combinedStreams(
+      ['btcusdt@depth@100ms'],
+      // this.watch_market_streams,
+      this.callbacks,
+    );
   }
 }

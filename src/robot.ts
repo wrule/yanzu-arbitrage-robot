@@ -22,7 +22,7 @@ class Robot {
   private get watch_market_streams() {
     return Array.from(
       this.watch_market_map.values())
-        .map((market) => `${market.symbol}@depth@100ms`
+        .map((market) => `${market.symbol.toLowerCase()}@depth@100ms`
     );
   }
 
@@ -60,7 +60,7 @@ class Robot {
       open: () => this.client.logger.log('open'),
       close: () => this.client.logger.log('closed'),
       message: (data: any) => {
-        // console.log(data);
+        console.log(data);
       },
     };
   }
@@ -75,9 +75,10 @@ class Robot {
     // console.log(Array.from(this.symbol_markets.keys()));
     // console.log(Array.from(this.symbol_markets.values())[0]);
     this.combined_streams = this.client.combinedStreams(
-      ['btcusdt@depth@100ms'],
-      // this.watch_market_streams,
+      // ['btcusdt@aggTrade'],
+      this.watch_market_streams,
       this.callbacks,
     );
+    // this.client.aggTradeWS('btcusdt', this.callbacks);
   }
 }

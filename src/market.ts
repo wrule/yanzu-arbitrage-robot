@@ -62,7 +62,7 @@ class Market {
 
   public async Sell(quantity: number) {
     try {
-      const rsp = await this.client.newOrder(
+      const rsp: AxiosResponse<any, any> = await this.client.newOrder(
         this.symbol,
         'SELL',
         'MARKET',
@@ -71,7 +71,9 @@ class Market {
           // timeInForce: 'GTC',
         },
       );
-      console.log(rsp);
+      if (rsp.status === 200) {
+        fs.writeFileSync('sell.json', JSON.stringify(rsp.data, null, 2));
+      }
     } catch (e) {
       console.error(e);
     }

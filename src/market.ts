@@ -3,7 +3,7 @@ import { pair_to_key } from './utils';
 export
 class Market {
   public constructor(
-    private readonly data: any,
+    public readonly data: any,
   ) {
     this.key = pair_to_key([this.baseAsset, this.quoteAsset]);
   }

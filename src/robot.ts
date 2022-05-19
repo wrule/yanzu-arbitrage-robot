@@ -73,6 +73,8 @@ class Robot {
     this.symbol_markets = this.get_symbol_markets();
     console.log(this.watch_market_streams);
 
+    const market = this.market_map.get('BTC/USDT') as Market;
+    console.log(market.data);
 
     // console.log(Array.from(this.symbol_markets.keys()));
     // console.log(Array.from(this.symbol_markets.values())[0]);

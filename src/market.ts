@@ -37,4 +37,12 @@ class Market {
   public get ASKPriceEst() {
     return 0;
   }
+
+  public async Buy() {
+
+  }
+
+  public async Sell() {
+
+  }
 }

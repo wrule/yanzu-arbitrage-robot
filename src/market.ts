@@ -1,6 +1,7 @@
 import { pair_to_key } from './utils';
 import fs from 'fs';
 import axios, { AxiosResponse } from 'axios';
+import { TransactionResultBuy, TransactionResultSell } from './ transaction_result';
 
 export
 class Market {
@@ -42,40 +43,22 @@ class Market {
   }
 
   public async Buy(quantity: number) {
-    try {
-      const rsp: AxiosResponse<any, any> = await this.client.newOrder(
-        this.symbol,
-        'BUY',
-        'MARKET',
-        {
-          quantity,
-          // timeInForce: 'GTC',
-        },
-      );
-      if (rsp.status === 200) {
-        fs.writeFileSync('buy.json', JSON.stringify(rsp.data, null, 2));
-      }
-    } catch (e) {
-      console.error(e);
-    }
+    const rsp: AxiosResponse<any, any> = await this.client.newOrder(
+      this.symbol,
+      'BUY',
+      'MARKET',
+      { quantity },
+    );
+    return new TransactionResultBuy(this.quoteAsset, this.baseAsset, rsp.data);
   }
 
   public async Sell(quantity: number) {
-    try {
-      const rsp: AxiosResponse<any, any> = await this.client.newOrder(
-        this.symbol,
-        'SELL',
-        'MARKET',
-        {
-          quantity,
-          // timeInForce: 'GTC',
-        },
-      );
-      if (rsp.status === 200) {
-        fs.writeFileSync('sell.json', JSON.stringify(rsp.data, null, 2));
-      }
-    } catch (e) {
-      console.error(e);
-    }
+    const rsp: AxiosResponse<any, any> = await this.client.newOrder(
+      this.symbol,
+      'SELL',
+      'MARKET',
+      { quantity },
+    );
+    return new TransactionResultSell(this.baseAsset, this.quoteAsset, rsp.data);
   }
 }

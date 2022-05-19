@@ -74,7 +74,8 @@ class Robot {
     console.log(this.watch_market_streams);
 
     const market = this.market_map.get('LINK/USDT') as Market;
-    market.Buy(2);
+    const result = await market.Sell(2);
+    result.Display();
     // market.Sell(10);
 
     // console.log(Array.from(this.symbol_markets.keys()));

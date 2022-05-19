@@ -28,7 +28,7 @@ abstract class TransactionResult {
   abstract OutQuantity: number;
 
   public Display() {
-    console.log(`${this.InAsset}:${this.InQuantity} -> ${this.OutAsset}:${this.OutQuantity}`);
+    console.log(`${this.InAsset}:${this.InQuantity} [${this.Price}]>> ${this.OutAsset}:${this.OutQuantity}`);
   }
 }
 

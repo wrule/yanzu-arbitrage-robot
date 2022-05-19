@@ -1,0 +1,24 @@
+{
+  "symbol": "LINKUSDT",
+  "orderId": 3386746135,
+  "orderListId": -1,
+  "clientOrderId": "RQzK06XiJ98Jg31NbVoV4O",
+  "transactTime": 1652954792376,
+  "price": "0.00000000",
+  "origQty": "2.00000000",
+  "executedQty": "2.00000000",
+  "cummulativeQuoteQty": "13.54000000",
+  "status": "FILLED",
+  "timeInForce": "GTC",
+  "type": "MARKET",
+  "side": "BUY",
+  "fills": [
+    {
+      "price": "6.77000000",
+      "qty": "2.00000000",
+      "commission": "0.00200000",
+      "commissionAsset": "LINK",
+      "tradeId": 216192372
+    }
+  ]
+}

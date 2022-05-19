@@ -13,7 +13,7 @@ class Robot {
 
   private async load_markets() {
     const rsp = await this.client.exchangeInfo();
-    const markets = (rsp.data.symbols as any[]).map((item) => new Market(item));
+    const markets = (rsp.data.symbols as any[]).map((item) => new Market(this.client, item));
     return new Map<string, Market>(markets.map((market) => [market.Key, market]));
   }
 
@@ -73,8 +73,8 @@ class Robot {
     this.symbol_markets = this.get_symbol_markets();
     console.log(this.watch_market_streams);
 
-    const market = this.market_map.get('BTC/USDT') as Market;
-    console.log(market.data);
+    const market = this.market_map.get('LINK/USDT') as Market;
+    market.Buy(2);
 
     // console.log(Array.from(this.symbol_markets.keys()));
     // console.log(Array.from(this.symbol_markets.values())[0]);

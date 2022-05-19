@@ -3,6 +3,7 @@ import { pair_to_key } from './utils';
 export
 class Market {
   public constructor(
+    private readonly client: any,
     public readonly data: any,
   ) {
     this.key = pair_to_key([this.baseAsset, this.quoteAsset]);
@@ -38,8 +39,21 @@ class Market {
     return 0;
   }
 
-  public async Buy() {
-
+  public async Buy(quantity: number) {
+    try {
+      const rsp = await this.client.newOrder(
+        this.symbol,
+        'BUY',
+        'MARKET',
+        {
+          quantity,
+          timeInForce: 'GTC',
+        },
+      );
+      console.log(rsp);
+    } catch (e) {
+      console.log('买入错误');
+    }
   }
 
   public async Sell() {

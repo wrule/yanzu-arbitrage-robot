@@ -72,13 +72,17 @@ class Robot {
     this.watch_market_map = this.get_watch_markets();
     this.symbol_markets = this.get_symbol_markets();
     console.log(this.watch_market_streams);
+
+
     // console.log(Array.from(this.symbol_markets.keys()));
     // console.log(Array.from(this.symbol_markets.values())[0]);
-    this.combined_streams = this.client.combinedStreams(
-      // ['btcusdt@aggTrade'],
-      this.watch_market_streams,
-      this.callbacks,
-    );
+
+
+    // this.combined_streams = this.client.combinedStreams(
+    //   // ['btcusdt@aggTrade'],
+    //   this.watch_market_streams,
+    //   this.callbacks,
+    // );
     // this.client.aggTradeWS('btcusdt', this.callbacks);
   }
 }

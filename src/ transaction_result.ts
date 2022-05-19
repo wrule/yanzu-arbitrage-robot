@@ -11,6 +11,10 @@ abstract class TransactionResult {
     return this.data.fills[0];
   }
 
+  public get Price() {
+    return Number(this.fills_first.price);
+  }
+
   public get InAsset() {
     return this.in_asset;
   }
@@ -33,5 +37,17 @@ extends TransactionResult {
 
   public get OutQuantity() {
     return Number(this.fills_first.qty) - Number(this.fills_first.commission);
+  }
+}
+
+export
+class TransactionResultSell
+extends TransactionResult {
+  public get InQuantity() {
+    return Number(this.data.executedQty);
+  }
+
+  public get OutQuantity() {
+    return Number(this.data.cummulativeQuoteQty) - Number(this.fills_first.commission);
   }
 }

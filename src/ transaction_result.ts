@@ -4,18 +4,34 @@ abstract class TransactionResult {
   public constructor(
     private readonly in_asset: string,
     private readonly out_asset: string,
-    private readonly data: any,
+    protected readonly data: any,
   ) { }
+
+  protected get fills_first() {
+    return this.data.fills[0];
+  }
 
   public get InAsset() {
     return this.in_asset;
   }
 
-  abstract InQuantity: string;
+  abstract InQuantity: number;
 
   public get OutAsset() {
     return this.out_asset;
   }
 
-  abstract OutQuantity: string;
+  abstract OutQuantity: number;
+}
+
+export
+class TransactionResultBuy
+extends TransactionResult {
+  public get InQuantity() {
+    return Number(this.data.cummulativeQuoteQty);
+  }
+
+  public get OutQuantity() {
+    return Number(this.fills_first.qty) - Number(this.fills_first.commission);
+  }
 }

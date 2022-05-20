@@ -71,14 +71,17 @@ class Robot {
     this.market_map = await this.load_markets();
     this.watch_market_map = this.get_watch_markets();
     this.symbol_markets = this.get_symbol_markets();
-    console.log(this.watch_market_streams);
+    // console.log(this.watch_market_streams);
 
     const ab = this.market_map.get('LINK/USDT') as Market;
     const bc = this.market_map.get('ETH/LINK') as Market;
     const ca = this.market_map.get('ETH/USDT') as Market;
+
+    console.log(ab.data);
+
     try {
-      const result1 = await ab.Buy(20.98765432);
-      result1.Display();
+      // const result1 = await ab.Sell(3.98765432);
+      // result1.Display();
       // const result2 = await bc.Sell(result1.OutQuantity);
       // result2.Display();
       // console.log(result2.OutQuantity);

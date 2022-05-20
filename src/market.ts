@@ -18,6 +18,15 @@ class Market {
     return this.key;
   }
 
+  public get filters() {
+    return this.data.filters as any[];
+  }
+
+  public get stepSize() {
+    const lot_size_item = this.filters.find((item) => item.filterType === 'LOT_SIZE');
+    return Number(lot_size_item?.stepSize);
+  }
+
   public get symbol() {
     return this.data.symbol as string;
   }
@@ -42,23 +51,23 @@ class Market {
     return 0;
   }
 
-  public async Buy(quoteOrderQty: number) {
+  public async Buy(in_qty: number) {
     const rsp: AxiosResponse<any, any> = await this.client.newOrder(
       this.symbol,
       'BUY',
       'MARKET',
-      { quoteOrderQty },
+      { quoteOrderQty: in_qty, },
     );
     fs.writeFileSync('buy.json', JSON.stringify(rsp.data, null, 2));
     return new TransactionResultBuy(this.quoteAsset, this.baseAsset, rsp.data);
   }
 
-  public async Sell(quantity: number) {
+  public async Sell(in_qty: number) {
     const rsp: AxiosResponse<any, any> = await this.client.newOrder(
       this.symbol,
       'SELL',
       'MARKET',
-      { quantity },
+      { quantity: in_qty, },
     );
     fs.writeFileSync('sell.json', JSON.stringify(rsp.data, null, 2));
     return new TransactionResultSell(this.baseAsset, this.quoteAsset, rsp.data);

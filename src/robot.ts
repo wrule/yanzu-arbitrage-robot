@@ -78,12 +78,14 @@ class Robot {
     const ca = this.market_map.get('ETH/USDT') as Market;
 
     try {
+      const old_time = Number(new Date());
       const result1 = await ab.Buy(20);
       result1.Display();
       const result2 = await bc.Sell(result1.OutQuantity);
       result2.Display();
       const result3 = await ca.Sell(result2.OutQuantity);
       result3.Display();
+      console.log(Number(new Date()) - old_time);
     } catch (e: any) {
       console.error(e);
     }

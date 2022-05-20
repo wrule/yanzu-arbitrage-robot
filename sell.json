@@ -1,24 +1,24 @@
 {
   "symbol": "ETHUSDT",
-  "orderId": 8986181367,
+  "orderId": 8986196834,
   "orderListId": -1,
-  "clientOrderId": "Vo8KqRkcZgJXDh5eBuXcGQ",
-  "transactTime": 1653027219798,
+  "clientOrderId": "1G4S7ncCNjQa5JrrADWSG0",
+  "transactTime": 1653027330777,
   "price": "0.00000000",
   "origQty": "0.00980000",
   "executedQty": "0.00980000",
-  "cummulativeQuoteQty": "19.84970400",
+  "cummulativeQuoteQty": "19.83294600",
   "status": "FILLED",
   "timeInForce": "GTC",
   "type": "MARKET",
   "side": "SELL",
   "fills": [
     {
-      "price": "2025.48000000",
+      "price": "2023.77000000",
       "qty": "0.00980000",
-      "commission": "0.00004822",
+      "commission": "0.00004819",
       "commissionAsset": "BNB",
-      "tradeId": 834885925
+      "tradeId": 834886672
     }
   ]
 }

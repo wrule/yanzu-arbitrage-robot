@@ -1,24 +1,31 @@
 {
   "symbol": "LINKUSDT",
-  "orderId": 3387919729,
+  "orderId": 3387930721,
   "orderListId": -1,
-  "clientOrderId": "aan3PED3cMoEBJNaLt5Vkg",
-  "transactTime": 1653014023134,
+  "clientOrderId": "Olzn33rUxCLfrs7DDZh9wZ",
+  "transactTime": 1653014683576,
   "price": "0.00000000",
-  "origQty": "2.79000000",
-  "executedQty": "2.79000000",
-  "cummulativeQuoteQty": "19.97640000",
+  "origQty": "2.78000000",
+  "executedQty": "2.78000000",
+  "cummulativeQuoteQty": "19.98820000",
   "status": "FILLED",
   "timeInForce": "GTC",
   "type": "MARKET",
   "side": "BUY",
   "fills": [
     {
-      "price": "7.16000000",
-      "qty": "2.79000000",
-      "commission": "0.00004883",
+      "price": "7.19000000",
+      "qty": "2.35000000",
+      "commission": "0.00004113",
       "commissionAsset": "BNB",
-      "tradeId": 216247840
+      "tradeId": 216248216
+    },
+    {
+      "price": "7.19000000",
+      "qty": "0.43000000",
+      "commission": "0.00000752",
+      "commissionAsset": "BNB",
+      "tradeId": 216248217
     }
   ]
 }

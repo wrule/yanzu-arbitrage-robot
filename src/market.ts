@@ -49,6 +49,7 @@ class Market {
       'MARKET',
       { quantity },
     );
+    fs.writeFileSync('buy.json', JSON.stringify(rsp.data, null, 2));
     return new TransactionResultBuy(this.quoteAsset, this.baseAsset, rsp.data);
   }
 
@@ -59,6 +60,7 @@ class Market {
       'MARKET',
       { quantity },
     );
+    fs.writeFileSync('sell.json', JSON.stringify(rsp.data, null, 2));
     return new TransactionResultSell(this.baseAsset, this.quoteAsset, rsp.data);
   }
 }

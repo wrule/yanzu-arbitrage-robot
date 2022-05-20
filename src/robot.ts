@@ -75,7 +75,7 @@ class Robot {
 
     const ab = this.market_map.get('LINK/USDT') as Market;
 
-    const result = await ab.Buy(2);
+    const result = await ab.Sell(2);
     result.Display();
 
     // const bc = this.market_map.get('ETH/LINK') as Market;

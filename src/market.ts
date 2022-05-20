@@ -53,12 +53,12 @@ class Market {
     return new TransactionResultBuy(this.quoteAsset, this.baseAsset, rsp.data);
   }
 
-  public async Sell(quoteOrderQty: number) {
+  public async Sell(quantity: number) {
     const rsp: AxiosResponse<any, any> = await this.client.newOrder(
       this.symbol,
       'SELL',
       'MARKET',
-      { quoteOrderQty },
+      { quantity },
     );
     fs.writeFileSync('sell.json', JSON.stringify(rsp.data, null, 2));
     return new TransactionResultSell(this.baseAsset, this.quoteAsset, rsp.data);

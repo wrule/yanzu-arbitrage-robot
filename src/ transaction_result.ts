@@ -40,7 +40,11 @@ extends TransactionResult {
   }
 
   public get OutQuantity() {
-    return Number(this.fills_first.qty) - Number(this.fills_first.commission);
+    if (this.fills_first.commissionAsset === this.OutAsset) {
+      return Number(this.fills_first.qty) - Number(this.fills_first.commission);
+    } else {
+      return Number(this.fills_first.qty);
+    }
   }
 }
 

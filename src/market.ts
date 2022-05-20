@@ -63,11 +63,13 @@ class Market {
   }
 
   public async Sell(in_qty: number) {
+    const multiplier = Math.ceil(1 / this.stepSize);
+    const real_in_qty = Math.floor(in_qty * multiplier) / multiplier;
     const rsp: AxiosResponse<any, any> = await this.client.newOrder(
       this.symbol,
       'SELL',
       'MARKET',
-      { quantity: in_qty, },
+      { quantity: real_in_qty, },
     );
     fs.writeFileSync('sell.json', JSON.stringify(rsp.data, null, 2));
     return new TransactionResultSell(this.baseAsset, this.quoteAsset, rsp.data);

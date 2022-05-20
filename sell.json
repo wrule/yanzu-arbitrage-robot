@@ -1,24 +1,24 @@
 {
-  "symbol": "ETHUSDT",
-  "orderId": 8984987947,
+  "symbol": "LINKUSDT",
+  "orderId": 3388173189,
   "orderListId": -1,
-  "clientOrderId": "NvmSUecT7tkNg8ajhrOLpy",
-  "transactTime": 1653014747824,
+  "clientOrderId": "t4MqmnpQNS6k2xmzaI4rq4",
+  "transactTime": 1653025265823,
   "price": "0.00000000",
-  "origQty": "0.01280000",
-  "executedQty": "0.01280000",
-  "cummulativeQuoteQty": "25.98195200",
+  "origQty": "1.98000000",
+  "executedQty": "1.98000000",
+  "cummulativeQuoteQty": "14.01840000",
   "status": "FILLED",
   "timeInForce": "GTC",
   "type": "MARKET",
   "side": "SELL",
   "fills": [
     {
-      "price": "2029.84000000",
-      "qty": "0.01280000",
-      "commission": "0.00006303",
+      "price": "7.08000000",
+      "qty": "1.98000000",
+      "commission": "0.00003416",
       "commissionAsset": "BNB",
-      "tradeId": 834812343
+      "tradeId": 216264755
     }
   ]
 }

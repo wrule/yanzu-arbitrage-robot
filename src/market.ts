@@ -58,7 +58,6 @@ class Market {
       'MARKET',
       { quoteOrderQty: in_qty, },
     );
-    fs.writeFileSync('buy.json', JSON.stringify(rsp.data, null, 2));
     return new TransactionResultBuy(this.quoteAsset, this.baseAsset, rsp.data);
   }
 
@@ -71,7 +70,6 @@ class Market {
       'MARKET',
       { quantity: real_in_qty, },
     );
-    fs.writeFileSync('sell.json', JSON.stringify(rsp.data, null, 2));
     return new TransactionResultSell(this.baseAsset, this.quoteAsset, rsp.data);
   }
 }

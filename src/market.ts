@@ -4,6 +4,9 @@ import { pair_to_key } from './utils';
 import { TransactionResultBuy, TransactionResultSell } from './ transaction_result';
 
 export
+type Book = [number, number][];
+
+export
 class Market {
   public constructor(
     private readonly client: any,
@@ -49,6 +52,18 @@ class Market {
 
   public get ASKPriceEst() {
     return 0;
+  }
+
+  private sell_book: Book = [];
+
+  public get SellBook() {
+    return this.sell_book;
+  }
+
+  private buy_book: Book = [];
+
+  public get BuyBook() {
+    return this.buy_book;
   }
 
   /**

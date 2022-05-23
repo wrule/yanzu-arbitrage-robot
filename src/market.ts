@@ -66,6 +66,11 @@ class Market {
     return this.buy_book;
   }
 
+  public UpdateBook(sell_book: Book, buy_book: Book) {
+    this.sell_book = sell_book;
+    this.buy_book = buy_book;
+  }
+
   /**
    * 购买
    * @param in_qty 输入资产数量

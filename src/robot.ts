@@ -1,5 +1,6 @@
 import { Market } from './market';
 import { Pair, pair_to_key } from './utils';
+import fs from 'fs';
 
 export
 class Robot {
@@ -60,6 +61,8 @@ class Robot {
       open: () => this.client.logger.log('open'),
       close: () => this.client.logger.log('closed'),
       message: (data: any) => {
+        const jsonObject = JSON.parse(data);
+        fs.writeFileSync('1.json', JSON.stringify(jsonObject, null, 2));
         console.log(data);
       },
     };
@@ -71,35 +74,35 @@ class Robot {
     this.market_map = await this.load_markets();
     this.watch_market_map = this.get_watch_markets();
     this.symbol_markets = this.get_symbol_markets();
-    // console.log(this.watch_market_streams);
+    console.log(this.watch_market_streams);
 
-    const ab = this.market_map.get('LINK/USDT') as Market;
-    const bc = this.market_map.get('ETH/LINK') as Market;
-    const ca = this.market_map.get('ETH/USDT') as Market;
+    // const ab = this.market_map.get('LINK/USDT') as Market;
+    // const bc = this.market_map.get('ETH/LINK') as Market;
+    // const ca = this.market_map.get('ETH/USDT') as Market;
 
-    try {
-      const old_time = Number(new Date());
-      const result1 = await ab.Buy(20);
-      result1.Display();
-      const result2 = await bc.Sell(result1.OutQuantity);
-      result2.Display();
-      const result3 = await ca.Sell(result2.OutQuantity);
-      result3.Display();
-      console.log(Number(new Date()) - old_time);
-    } catch (e: any) {
-      console.error(e);
-    }
+    // try {
+    //   const old_time = Number(new Date());
+    //   const result1 = await ab.Buy(20);
+    //   result1.Display();
+    //   const result2 = await bc.Sell(result1.OutQuantity);
+    //   result2.Display();
+    //   const result3 = await ca.Sell(result2.OutQuantity);
+    //   result3.Display();
+    //   console.log(Number(new Date()) - old_time);
+    // } catch (e: any) {
+    //   console.error(e);
+    // }
 
 
     // console.log(Array.from(this.symbol_markets.keys()));
     // console.log(Array.from(this.symbol_markets.values())[0]);
 
 
-    // this.combined_streams = this.client.combinedStreams(
-    //   // ['btcusdt@aggTrade'],
-    //   this.watch_market_streams,
-    //   this.callbacks,
-    // );
+    this.combined_streams = this.client.combinedStreams(
+      ['btcusdt@bookTicker'],
+      // this.watch_market_streams,
+      this.callbacks,
+    );
     // this.client.aggTradeWS('btcusdt', this.callbacks);
   }
 }

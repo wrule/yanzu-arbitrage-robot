@@ -51,6 +51,11 @@ class Market {
     return 0;
   }
 
+  /**
+   * 购买
+   * @param in_qty 输入资产数量
+   * @returns 交易结果
+   */
   public async Buy(in_qty: number) {
     const rsp: AxiosResponse<any, any> = await this.client.newOrder(
       this.symbol,

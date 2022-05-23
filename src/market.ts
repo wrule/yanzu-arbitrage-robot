@@ -66,6 +66,11 @@ class Market {
     return new TransactionResultBuy(this.quoteAsset, this.baseAsset, rsp.data);
   }
 
+  /**
+   * 出售
+   * @param in_qty 输入资产数量
+   * @returns 交易结果
+   */
   public async Sell(in_qty: number) {
     const multiplier = Math.ceil(1 / this.stepSize);
     const real_in_qty = Math.floor(in_qty * multiplier) / multiplier;

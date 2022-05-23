@@ -62,7 +62,7 @@ class Robot {
       close: () => this.client.logger.log('closed'),
       message: (data: any) => {
         const jsonObject = JSON.parse(data);
-        fs.writeFileSync('1.json', JSON.stringify(jsonObject, null, 2));
+        fs.writeFileSync('2.json', JSON.stringify(jsonObject, null, 2));
         console.log(data);
       },
     };
@@ -99,7 +99,7 @@ class Robot {
 
 
     this.combined_streams = this.client.combinedStreams(
-      ['btcusdt@bookTicker'],
+      ['btcusdt@depth@100ms'],
       // this.watch_market_streams,
       this.callbacks,
     );

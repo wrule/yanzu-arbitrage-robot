@@ -37,7 +37,7 @@ class Robot {
         ring.BaseMarket2.symbol,
         ring.SwapMarket.symbol,
       ].forEach((symbol) => {
-        result.push(`${symbol}@depth20@100ms`);
+        result.push(`${symbol}@depth20@100ms`.toLowerCase());
       });
     });
     return Array.from(new Set(result));
@@ -90,9 +90,9 @@ class Robot {
   public async Start() {
     this.market_map = await this.load_markets();
     this.rings = this.get_watch_rings();
-    const symbols = this.get_watch_streams();
+    const streams = this.get_watch_streams();
     // this.symbol_markets = this.get_symbol_markets();
-    console.log(this.rings.length, symbols);
+    console.log(this.rings.length, streams);
 
     // const ab = this.market_map.get('LINK/USDT') as Market;
     // const bc = this.market_map.get('ETH/LINK') as Market;
@@ -116,11 +116,12 @@ class Robot {
     // console.log(Array.from(this.symbol_markets.values())[0]);
 
 
-    // this.combined_streams = this.client.combinedStreams(
-    //   ['btcusdt@depth20@100ms'],
-    //   // this.watch_market_streams,
-    //   this.callbacks,
-    // );
+    this.combined_streams = this.client.combinedStreams(
+      // ['btcusdt@depth20@100ms'],
+      // this.watch_market_streams,
+      streams,
+      this.callbacks,
+    );
     // this.client.aggTradeWS('btcusdt', this.callbacks);
   }
 }

@@ -38,18 +38,11 @@ class Robot {
   private get_watch_markets() {
     const result = new Map<string, Market>();
     this.pairs.forEach((pair) => {
-      const keys = [
-        pair_to_key([pair[0], this.base]),
-        pair_to_key([pair[1], this.base]),
-        pair_to_key(pair),
-      ];
-      if (keys.every((key) => this.market_map.has(key))) {
-        keys.forEach((key) => {
-          const market = this.market_map.get(key) as Market;
-          if (!result.has(key)) {
-            result.set(key, market);
-          }
-        });
+      const base_market1 = this.market_map.get(``) || this.market_map.get(``);
+      const base_market2 = this.market_map.get(``) || this.market_map.get(``);
+      const swap_market = this.market_map.get(``) || this.market_map.get(``);
+      if (base_market1 && base_market2 && swap_market) {
+
       }
     });
     return result;
@@ -82,7 +75,7 @@ class Robot {
     this.market_map = await this.load_markets();
     this.watch_market_map = this.get_watch_markets();
     this.symbol_markets = this.get_symbol_markets();
-    console.log(this.watch_market_streams);
+    console.log(this.market_map.size);
 
     // const ab = this.market_map.get('LINK/USDT') as Market;
     // const bc = this.market_map.get('ETH/LINK') as Market;

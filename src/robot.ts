@@ -2,6 +2,7 @@ import { Market } from './market';
 import { Pair, pair_to_key } from './utils';
 import fs from 'fs';
 import { AxiosResponse } from 'axios';
+import { Ring } from './ring';
 
 export
 class Robot {
@@ -36,13 +37,19 @@ class Robot {
   }
 
   private get_watch_markets() {
-    const result = new Map<string, Market>();
+    const result: Ring[] = [];
     this.pairs.forEach((pair) => {
-      const base_market1 = this.market_map.get(``) || this.market_map.get(``);
-      const base_market2 = this.market_map.get(``) || this.market_map.get(``);
-      const swap_market = this.market_map.get(``) || this.market_map.get(``);
+      const base_market1 =
+        this.market_map.get(`${pair[0]}${this.base}`) ||
+        this.market_map.get(`${this.base}${pair[0]}`);
+      const base_market2 =
+        this.market_map.get(`${pair[1]}${this.base}`) ||
+        this.market_map.get(`${this.base}${pair[1]}`);
+      const swap_market =
+        this.market_map.get(`${pair[0]}${pair[1]}`) ||
+        this.market_map.get(`${pair[1]}${pair[0]}`);
       if (base_market1 && base_market2 && swap_market) {
-
+        result.push(new Ring(base_market1, base_market2, swap_market));
       }
     });
     return result;

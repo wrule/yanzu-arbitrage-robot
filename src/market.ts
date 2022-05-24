@@ -66,6 +66,11 @@ class Market {
     return this.buy_book;
   }
 
+  /**
+   * 更新订单薄
+   * @param sell_book 出售订单薄
+   * @param buy_book 购买订单薄
+   */
   public UpdateBook(sell_book: Book, buy_book: Book) {
     this.sell_book = sell_book;
     this.buy_book = buy_book;

@@ -29,11 +29,18 @@ class Robot {
 
   private watch_market_map!: Map<string, Market>;
 
-  private get watch_market_streams() {
-    return Array.from(
-      this.watch_market_map.values())
-        .map((market) => `${market.symbol.toLowerCase()}@depth@100ms`
-    );
+  private get_watch_streams() {
+    const result: string[] = [];
+    this.rings.forEach((ring) => {
+      [
+        ring.BaseMarket1.symbol,
+        ring.BaseMarket2.symbol,
+        ring.SwapMarket.symbol,
+      ].forEach((symbol) => {
+        result.push(symbol);
+      });
+    });
+    return Array.from(new Set(result));
   }
 
   private rings: Ring[] = [];
@@ -83,8 +90,9 @@ class Robot {
   public async Start() {
     this.market_map = await this.load_markets();
     this.rings = this.get_watch_rings();
+    const symbols = this.get_watch_streams();
     // this.symbol_markets = this.get_symbol_markets();
-    console.log(this.rings.length);
+    console.log(this.rings.length, symbols);
 
     // const ab = this.market_map.get('LINK/USDT') as Market;
     // const bc = this.market_map.get('ETH/LINK') as Market;

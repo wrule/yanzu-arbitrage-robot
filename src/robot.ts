@@ -1,6 +1,7 @@
 import { Market } from './market';
 import { Pair, pair_to_key } from './utils';
 import fs from 'fs';
+import { AxiosResponse } from 'axios';
 
 export
 class Robot {
@@ -12,10 +13,17 @@ class Robot {
 
   private market_map!: Map<string, Market>;
 
+  /**
+   * 加载可用市场
+   * @returns 可用市场Map
+   */
   private async load_markets() {
-    const rsp = await this.client.exchangeInfo();
-    const markets = (rsp.data.symbols as any[]).map((item) => new Market(this.client, item));
-    return new Map<string, Market>(markets.map((market) => [market.Key, market]));
+    const rsp: AxiosResponse<any, any> = await this.client.exchangeInfo();
+    const markets = (rsp.data.symbols as any[])
+      .map((item) => new Market(this.client, item));
+    return new Map<string, Market>(
+      markets.map((market) => [market.symbol, market])
+    );
   }
 
   private watch_market_map!: Map<string, Market>;
@@ -98,11 +106,11 @@ class Robot {
     // console.log(Array.from(this.symbol_markets.values())[0]);
 
 
-    this.combined_streams = this.client.combinedStreams(
-      ['btcusdt@depth20@100ms'],
-      // this.watch_market_streams,
-      this.callbacks,
-    );
+    // this.combined_streams = this.client.combinedStreams(
+    //   ['btcusdt@depth20@100ms'],
+    //   // this.watch_market_streams,
+    //   this.callbacks,
+    // );
     // this.client.aggTradeWS('btcusdt', this.callbacks);
   }
 }

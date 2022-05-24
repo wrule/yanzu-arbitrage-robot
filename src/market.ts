@@ -11,15 +11,7 @@ class Market {
   public constructor(
     private readonly client: any,
     public readonly data: any,
-  ) {
-    this.key = pair_to_key([this.baseAsset, this.quoteAsset]);
-  }
-
-  private key = '';
-
-  public get Key() {
-    return this.key;
-  }
+  ) { }
 
   public get filters() {
     return this.data.filters as any[];

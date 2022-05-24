@@ -37,7 +37,7 @@ class Robot {
         ring.BaseMarket2.symbol,
         ring.SwapMarket.symbol,
       ].forEach((symbol) => {
-        result.push(symbol);
+        result.push(`${symbol}@depth20@100ms`);
       });
     });
     return Array.from(new Set(result));

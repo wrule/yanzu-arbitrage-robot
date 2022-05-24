@@ -36,7 +36,9 @@ class Robot {
     );
   }
 
-  private get_watch_markets() {
+  private rings: Ring[] = [];
+
+  private get_watch_rings() {
     const result: Ring[] = [];
     this.pairs.forEach((pair) => {
       const base_market1 =
@@ -80,9 +82,9 @@ class Robot {
 
   public async Start() {
     this.market_map = await this.load_markets();
-    this.watch_market_map = this.get_watch_markets();
-    this.symbol_markets = this.get_symbol_markets();
-    console.log(this.market_map.size);
+    this.rings = this.get_watch_rings();
+    // this.symbol_markets = this.get_symbol_markets();
+    console.log(this.rings.length);
 
     // const ab = this.market_map.get('LINK/USDT') as Market;
     // const bc = this.market_map.get('ETH/LINK') as Market;

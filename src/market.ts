@@ -39,11 +39,11 @@ class Market {
   }
 
   public get BuyPriceEst() {
-    return this.buy_book[0][0];
+    return Number(this.buy_book[0][0]);
   }
 
   public get SellPriceEst() {
-    return this.sell_book[0][0];
+    return Number(this.sell_book[0][0]);
   }
 
   private sell_book: Book = [];

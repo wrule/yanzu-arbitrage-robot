@@ -29,6 +29,7 @@ class Ring {
   }
 
   public Check() {
+    // 思考如何计算套利空间
     console.log(
       this.base_market1.symbol,
       this.base_market1.SellPriceEst,

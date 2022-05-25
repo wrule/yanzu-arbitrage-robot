@@ -39,3 +39,10 @@ class Ring {
     );
   }
 }
+
+
+//           USDT
+
+//       10        6
+
+//   BTC              ETH

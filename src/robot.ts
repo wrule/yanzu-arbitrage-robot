@@ -86,7 +86,7 @@ class Robot {
           market.UpdateBook([[data.a, data.A]], [[data.b, data.B]]);
           this.rings.forEach((ring) => {
             if (ring.MarketSymbols.includes(market.symbol)) {
-
+              ring.Check();
             }
           });
         }

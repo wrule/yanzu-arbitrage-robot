@@ -38,12 +38,12 @@ class Market {
     return this.data.quoteAsset as string;
   }
 
-  public get BIDPriceEst() {
-    return 0;
+  public get BuyPriceEst() {
+    return this.buy_book[0][0];
   }
 
-  public get ASKPriceEst() {
-    return 0;
+  public get SellPriceEst() {
+    return this.sell_book[0][0];
   }
 
   private sell_book: Book = [];

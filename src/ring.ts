@@ -19,4 +19,12 @@ class Ring {
   public get SwapMarket() {
     return this.swap_market;
   }
+
+  public get MarketSymbols() {
+    return [
+      this.base_market1.symbol,
+      this.base_market2.symbol,
+      this.swap_market.symbol,
+    ];
+  }
 }

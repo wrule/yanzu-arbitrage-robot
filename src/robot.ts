@@ -37,7 +37,7 @@ class Robot {
         ring.BaseMarket2.symbol,
         ring.SwapMarket.symbol,
       ].forEach((symbol) => {
-        result.push(`${symbol}@depth20@100ms`.toLowerCase());
+        result.push(`${symbol.toLowerCase()}@bookTicker`);
       });
     });
     return Array.from(new Set(result));
@@ -77,10 +77,15 @@ class Robot {
     return {
       open: () => this.client.logger.log('open'),
       close: () => this.client.logger.log('closed'),
-      message: (data: any) => {
-        const jsonObject = JSON.parse(data);
-        fs.writeFileSync('3.json', JSON.stringify(jsonObject, null, 2));
-        console.log(data);
+      message: (json_text: any) => {
+        const json_object = JSON.parse(json_text);
+        const data = json_object.data;
+        const symbol = data.s;
+        const market = this.market_map.get(symbol);
+        if (market) {
+          market.UpdateBook([[data.a, data.A]], [[data.b, data.B]]);
+          console.log(symbol);
+        }
       },
     };
   }
@@ -116,12 +121,12 @@ class Robot {
     // console.log(Array.from(this.symbol_markets.values())[0]);
 
 
-    // this.combined_streams = this.client.combinedStreams(
-    //   // ['btcusdt@depth20@100ms'],
-    //   // this.watch_market_streams,
-    //   streams,
-    //   this.callbacks,
-    // );
+    this.combined_streams = this.client.combinedStreams(
+      // ['btcusdt@depth20@100ms'],
+      // this.watch_market_streams,
+      streams,
+      this.callbacks,
+    );
     // this.client.aggTradeWS('btcusdt', this.callbacks);
   }
 }

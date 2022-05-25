@@ -84,7 +84,11 @@ class Robot {
         const market = this.market_map.get(symbol);
         if (market) {
           market.UpdateBook([[data.a, data.A]], [[data.b, data.B]]);
-          console.log(symbol, data.a, data.b);
+          this.rings.forEach((ring) => {
+            if (ring.MarketSymbols.includes(market.symbol)) {
+
+            }
+          });
         }
       },
     };

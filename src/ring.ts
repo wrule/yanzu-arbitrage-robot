@@ -27,4 +27,8 @@ class Ring {
       this.swap_market.symbol,
     ];
   }
+
+  public Check() {
+
+  }
 }

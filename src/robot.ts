@@ -84,7 +84,7 @@ class Robot {
         const market = this.market_map.get(symbol);
         if (market) {
           market.UpdateBook([[data.a, data.A]], [[data.b, data.B]]);
-          console.log(symbol);
+          console.log(symbol, data.a, data.b);
         }
       },
     };

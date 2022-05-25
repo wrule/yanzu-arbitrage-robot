@@ -29,6 +29,10 @@ class Ring {
   }
 
   public Check() {
-
+    console.log(
+      this.base_market1.symbol,
+      this.base_market2.symbol,
+      this.swap_market.symbol,
+    );
   }
 }

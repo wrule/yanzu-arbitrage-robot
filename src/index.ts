@@ -7,7 +7,7 @@ async function main() {
   const robot = new Robot(
     client,
     'USDT',
-    [['BTC', 'ETH'], ['BTC', 'ADA'], ['ETH', 'LINK']],
+    [['BTC', 'ETH']],
   );
   await robot.Start();
 }

@@ -9,9 +9,9 @@ class Ring {
     private readonly swap_market: Market,
   ) { }
 
-  private base_name = '';
-  private swap1_name = '';
-  private swap2_name = '';
+  private base_market1_forward = true;
+  private base_market2_forward = true;
+  private swap_market_forward = true;
 
   private async base_to_swap1(in_qty: number): Promise<TransactionResult> {
     return null as any;

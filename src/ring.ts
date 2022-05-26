@@ -8,51 +8,58 @@ class Ring {
     private readonly base_market2: Market,
     private readonly swap_market: Market,
   ) {
-    let base = '';
-    let swap1 = '';
-    let swap2 = '';
+    this.initialization();
+  }
+
+  private base = '';
+  private swap1 = '';
+  private swap2 = '';
+  private base_market1_forward = true;
+  private base_market2_forward = true;
+  private swap_market_forward = true;
+
+  /**
+   * 初始化与校验
+   */
+  private initialization() {
     if (
       (this.base_market1.quoteAsset === this.base_market2.quoteAsset) ||
       (this.base_market1.quoteAsset === this.base_market2.baseAsset)
     ) {
-      base = this.base_market1.quoteAsset;
+      this.base = this.base_market1.quoteAsset;
     }
     if (
       (this.base_market1.baseAsset === this.base_market2.quoteAsset) ||
       (this.base_market1.baseAsset === this.base_market2.baseAsset)
     ) {
-      base = this.base_market1.baseAsset;
+      this.base = this.base_market1.baseAsset;
     }
-    if (!base) {
+    if (!this.base) {
       throw new Error('base错误');
     }
 
-    if (this.base_market1.quoteAsset === base) {
+    if (this.base_market1.quoteAsset === this.base) {
       this.base_market1_forward = true;
-      swap1 = this.base_market1.baseAsset;
+      this.swap1 = this.base_market1.baseAsset;
     } else {
       this.base_market1_forward = false;
-      swap1 = this.base_market1.quoteAsset;
+      this.swap1 = this.base_market1.quoteAsset;
     }
 
-    if (this.base_market2.quoteAsset === base) {
+    if (this.base_market2.quoteAsset === this.base) {
       this.base_market2_forward = true;
-      swap2 = this.base_market2.baseAsset;
+      this.swap2 = this.base_market2.baseAsset;
     } else {
       this.base_market2_forward = false;
-      swap2 = this.base_market2.quoteAsset;
+      this.swap2 = this.base_market2.quoteAsset;
     }
 
-    if (this.swap_market.baseAsset === swap1) {
+    if (this.swap_market.baseAsset === this.swap1) {
       this.swap_market_forward = true;
     } else {
       this.swap_market_forward = false;
     }
   }
-
-  private base_market1_forward = true;
-  private base_market2_forward = true;
-  private swap_market_forward = true;
 
   private async base_to_swap1(in_qty: number): Promise<TransactionResult> {
     if (this.base_market1_forward) {

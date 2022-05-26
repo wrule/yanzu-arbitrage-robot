@@ -14,7 +14,11 @@ class Ring {
   private swap_market_forward = true;
 
   private async base_to_swap1(in_qty: number): Promise<TransactionResult> {
-    return null as any;
+    if (this.base_market1_forward) {
+      return this.base_market1.Buy(in_qty);
+    } else {
+      return this.base_market1.Sell(in_qty);
+    }
   }
 
   private async swap1_to_base(in_qty: number): Promise<TransactionResult> {

@@ -69,6 +69,7 @@ class Ring {
     }
   }
 
+  //#region 真实交易方法
   private async base_to_swap1(in_qty: number): Promise<TransactionResult> {
     if (this.base_market1_forward) {
       return this.base_market1.Buy(in_qty);
@@ -128,6 +129,7 @@ class Ring {
     const tn2 = await this.swap2_to_swap1(tn1.OutQuantity);
     const tn3 = await this.swap1_to_base(tn2.OutQuantity);
   }
+  //#endregion
 
   public get BaseMarket1() {
     return this.base_market1;

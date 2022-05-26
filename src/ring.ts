@@ -131,6 +131,9 @@ class Ring {
   }
   //#endregion
 
+  //#region 模拟交易方法
+  //#endregion
+
   public get BaseMarket1() {
     return this.base_market1;
   }

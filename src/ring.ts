@@ -37,6 +37,18 @@ class Ring {
     return null as any;
   }
 
+  private async forward_transaction(in_qty: number) {
+    const tn1 = await this.base_to_swap1(in_qty);
+    const tn2 = await this.swap1_to_swap2(tn1.OutQuantity);
+    const tn3 = await this.swap2_to_base(tn2.OutQuantity);
+  }
+
+  private async reverse_transaction(in_qty: number) {
+    const tn1 = await this.base_to_swap2(in_qty);
+    const tn2 = await this.swap2_to_swap1(tn1.OutQuantity);
+    const tn3 = await this.swap1_to_base(tn2.OutQuantity);
+  }
+
   public get BaseMarket1() {
     return this.base_market1;
   }

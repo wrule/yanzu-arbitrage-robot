@@ -34,6 +34,14 @@ class Ring {
       this.base_market1_forward = false;
       swap1 = this.base_market1.quoteAsset;
     }
+
+    if (this.base_market2.quoteAsset === base) {
+      this.base_market2_forward = true;
+      swap2 = this.base_market2.baseAsset;
+    } else {
+      this.base_market2_forward = false;
+      swap2 = this.base_market2.quoteAsset;
+    }
   }
 
   private base_market1_forward = true;

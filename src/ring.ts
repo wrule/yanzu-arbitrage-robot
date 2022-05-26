@@ -165,6 +165,16 @@ class Ring {
     }
     return out_qty * 0.999;
   }
+
+  private sim_swap2_to_base(in_qty: number): number {
+    let out_qty = 0;
+    if (this.base_market2_forward) {
+      out_qty = in_qty * this.base_market2.BuyPriceEst;
+    } else {
+      out_qty = in_qty / this.base_market2.SellPriceEst;
+    }
+    return out_qty * 0.999;
+  }
   //#endregion
 
   public get BaseMarket1() {

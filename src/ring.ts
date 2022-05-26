@@ -26,6 +26,14 @@ class Ring {
     if (!base) {
       throw new Error('base错误');
     }
+
+    if (this.base_market1.quoteAsset === base) {
+      this.base_market1_forward = true;
+      swap1 = this.base_market1.baseAsset;
+    } else {
+      this.base_market1_forward = false;
+      swap1 = this.base_market1.quoteAsset;
+    }
   }
 
   private base_market1_forward = true;

@@ -199,6 +199,18 @@ class Ring {
     }
     return out_qty * 0.999;
   }
+
+  private sim_forward_transaction(in_qty: number): number {
+    const out1 = this.sim_base_to_swap1(in_qty);
+    const out2 = this.sim_swap1_to_swap2(out1);
+    return this.sim_swap2_to_base(out2);
+  }
+
+  private sim_reverse_transaction(in_qty: number): number {
+    const out1 = this.sim_base_to_swap2(in_qty);
+    const out2 = this.sim_swap2_to_swap1(out1);
+    return this.sim_swap1_to_base(out2);
+  }
   //#endregion
 
   public get BaseMarket1() {

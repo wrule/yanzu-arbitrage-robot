@@ -35,7 +35,7 @@ class Ring {
       this.base = this.base_market1.baseAsset;
     }
     if (!this.base) {
-      throw new Error('base错误');
+      throw new Error('无法定位到base');
     }
 
     if (this.base_market1.quoteAsset === this.base) {

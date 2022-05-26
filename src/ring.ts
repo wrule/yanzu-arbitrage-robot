@@ -1,4 +1,5 @@
 import { Market } from './market';
+import { TransactionResult } from './ transaction_result';
 
 export
 class Ring {
@@ -7,6 +8,34 @@ class Ring {
     private readonly base_market2: Market,
     private readonly swap_market: Market,
   ) { }
+
+  private base_name = '';
+  private swap1_name = '';
+  private swap2_name = '';
+
+  private async base_to_swap1(in_qty: number): Promise<TransactionResult> {
+    return null as any;
+  }
+
+  private async swap1_to_base(in_qty: number): Promise<TransactionResult> {
+    return null as any;
+  }
+
+  private async base_to_swap2(in_qty: number): Promise<TransactionResult> {
+    return null as any;
+  }
+
+  private async swap2_to_base(in_qty: number): Promise<TransactionResult> {
+    return null as any;
+  }
+
+  private async swap1_to_swap2(in_qty: number): Promise<TransactionResult> {
+    return null as any;
+  }
+
+  private async swap2_to_swap1(in_qty: number): Promise<TransactionResult> {
+    return null as any;
+  }
 
   public get BaseMarket1() {
     return this.base_market1;

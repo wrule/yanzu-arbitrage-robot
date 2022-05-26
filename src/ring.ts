@@ -54,10 +54,18 @@ class Ring {
       this.swap2 = this.base_market2.quoteAsset;
     }
 
-    if (this.swap_market.baseAsset === this.swap1) {
+    if (
+      (this.swap_market.baseAsset === this.swap1) &&
+      (this.swap_market.quoteAsset === this.swap2)
+    ) {
       this.swap_market_forward = true;
-    } else {
+    } else if (
+      (this.swap_market.baseAsset === this.swap2) &&
+      (this.swap_market.quoteAsset === this.swap1)
+    ) {
       this.swap_market_forward = false;
+    } else {
+      throw new Error('swap市场没有对齐');
     }
   }
 

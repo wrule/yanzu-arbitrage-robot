@@ -132,6 +132,9 @@ class Ring {
   //#endregion
 
   //#region 模拟交易方法
+  private sim_base_to_swap1(in_qty: number): number {
+    return 0;
+  }
   //#endregion
 
   public get BaseMarket1() {

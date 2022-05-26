@@ -7,7 +7,24 @@ class Ring {
     private readonly base_market1: Market,
     private readonly base_market2: Market,
     private readonly swap_market: Market,
-  ) { }
+  ) {
+    let base = '';
+    if (
+      (this.base_market1.quoteAsset === this.base_market2.quoteAsset) ||
+      (this.base_market1.quoteAsset === this.base_market2.baseAsset)
+    ) {
+      base = this.base_market1.quoteAsset;
+    }
+    if (
+      (this.base_market1.baseAsset === this.base_market2.quoteAsset) ||
+      (this.base_market1.baseAsset === this.base_market2.baseAsset)
+    ) {
+      base = this.base_market1.baseAsset;
+    }
+    if (!base) {
+      throw new Error('base错误');
+    }
+  }
 
   private base_market1_forward = true;
   private base_market2_forward = true;

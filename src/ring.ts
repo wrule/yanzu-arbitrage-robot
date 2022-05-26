@@ -9,6 +9,8 @@ class Ring {
     private readonly swap_market: Market,
   ) {
     let base = '';
+    let swap1 = '';
+    let swap2 = '';
     if (
       (this.base_market1.quoteAsset === this.base_market2.quoteAsset) ||
       (this.base_market1.quoteAsset === this.base_market2.baseAsset)

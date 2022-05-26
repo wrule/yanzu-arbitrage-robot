@@ -144,6 +144,18 @@ class Ring {
     return out_qty * 0.999;
   }
 
+  private sim_swap1_to_base(in_qty: number): number {
+    let out_qty = 0;
+    if (this.base_market1_forward) {
+      // BTC/USDT 10
+      out_qty = in_qty * this.base_market1.BuyPriceEst;
+    } else {
+      // USDT/BTC 0.1
+      out_qty = in_qty / this.base_market1.SellPriceEst;
+    }
+    return out_qty * 0.999;
+  }
+
   private sim_base_to_swap2(in_qty: number): number {
     let out_qty = 0;
     if (this.base_market2_forward) {

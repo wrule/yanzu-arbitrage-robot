@@ -179,10 +179,8 @@ class Ring {
   private sim_swap1_to_swap2(in_qty: number): number {
     let out_qty = 0;
     if (this.swap_market_forward) {
-      // BTC/USDT 10
       out_qty = in_qty * this.swap_market.BuyPriceEst;
     } else {
-      // USDT/BTC 0.1
       out_qty = in_qty / this.swap_market.SellPriceEst;
     }
     return out_qty * this.fee;
@@ -191,10 +189,8 @@ class Ring {
   private sim_swap2_to_swap1(in_qty: number): number {
     let out_qty = 0;
     if (this.swap_market_forward) {
-      // BTC/USDT 10
       out_qty = in_qty / this.swap_market.SellPriceEst;
     } else {
-      // USDT/BTC 0.1
       out_qty = in_qty * this.swap_market.BuyPriceEst;
     }
     return out_qty * this.fee;

@@ -249,7 +249,7 @@ class Ring {
         console.log('反向交易机会');
       }
 
-      console.log('Check: ', this.MarketSymbols);
+      console.log('Check: ', this.MarketSymbols, forward_diff_ratio, reverse_diff_ratio);
     }
   }
 }

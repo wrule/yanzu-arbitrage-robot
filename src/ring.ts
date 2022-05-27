@@ -10,6 +10,7 @@ class Ring {
     private readonly base_market1: Market,
     private readonly base_market2: Market,
     private readonly swap_market: Market,
+    private readonly fee = 0.999,
   ) {
     this.initialization();
   }
@@ -144,7 +145,7 @@ class Ring {
       // USDT/BTC 0.1
       out_qty = in_qty * this.base_market1.BuyPriceEst;
     }
-    return out_qty * 0.999;
+    return out_qty * this.fee;
   }
 
   private sim_swap1_to_base(in_qty: number): number {
@@ -156,7 +157,7 @@ class Ring {
       // USDT/BTC 0.1
       out_qty = in_qty / this.base_market1.SellPriceEst;
     }
-    return out_qty * 0.999;
+    return out_qty * this.fee;
   }
 
   private sim_base_to_swap2(in_qty: number): number {
@@ -166,7 +167,7 @@ class Ring {
     } else {
       out_qty = in_qty * this.base_market2.BuyPriceEst;
     }
-    return out_qty * 0.999;
+    return out_qty * this.fee;
   }
 
   private sim_swap2_to_base(in_qty: number): number {
@@ -176,7 +177,7 @@ class Ring {
     } else {
       out_qty = in_qty / this.base_market2.SellPriceEst;
     }
-    return out_qty * 0.999;
+    return out_qty * this.fee;
   }
 
   private sim_swap1_to_swap2(in_qty: number): number {
@@ -188,7 +189,7 @@ class Ring {
       // USDT/BTC 0.1
       out_qty = in_qty / this.swap_market.SellPriceEst;
     }
-    return out_qty * 0.999;
+    return out_qty * this.fee;
   }
 
   private sim_swap2_to_swap1(in_qty: number): number {
@@ -200,7 +201,7 @@ class Ring {
       // USDT/BTC 0.1
       out_qty = in_qty * this.swap_market.BuyPriceEst;
     }
-    return out_qty * 0.999;
+    return out_qty * this.fee;
   }
 
   private sim_forward_transaction(in_qty: number): number {

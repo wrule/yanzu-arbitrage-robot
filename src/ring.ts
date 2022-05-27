@@ -230,21 +230,27 @@ class Ring {
   }
 
   public Check() {
-    const in_qty = 100;
+    if (
+      this.base_market1.MarkReady &&
+      this.base_market2.MarkReady &&
+      this.swap_market.MarkReady
+    ) {
+      const in_qty = 100;
 
-    const forward_out_qty = this.sim_forward_transaction(in_qty);
-    const forward_diff_ratio = (forward_out_qty - in_qty) / in_qty;
-    if (forward_diff_ratio > 0) {
-      console.log('正向交易机会');
+      const forward_out_qty = this.sim_forward_transaction(in_qty);
+      const forward_diff_ratio = (forward_out_qty - in_qty) / in_qty;
+      if (forward_diff_ratio > 0) {
+        console.log('正向交易机会');
+      }
+
+      const reverse_out_qty = this.sim_reverse_transaction(in_qty);
+      const reverse_diff_ratio = (reverse_out_qty - in_qty) / in_qty;
+      if (reverse_diff_ratio > 0) {
+        console.log('反向交易机会');
+      }
+
+      console.log('Check: ', this.MarketSymbols);
     }
-
-    const reverse_out_qty = this.sim_reverse_transaction(in_qty);
-    const reverse_diff_ratio = (reverse_out_qty - in_qty) / in_qty;
-    if (reverse_diff_ratio > 0) {
-      console.log('反向交易机会');
-    }
-
-    console.log('Check: ', this.MarketSymbols);
   }
 }
 

@@ -46,6 +46,10 @@ class Market {
     return Number(this.sell_book[0][0]);
   }
 
+  public get MarkReady() {
+    return this.buy_book.length > 0 && this.sell_book.length > 0;
+  }
+
   private sell_book: Book = [];
 
   public get SellBook() {

@@ -264,7 +264,9 @@ class Ring {
         })();
       }
 
-      // console.log('Check: ', this.MarketSymbols, forward_diff_ratio, reverse_diff_ratio);
+      if (Math.random() * 100 < 1) {
+        console.log('Check: ', this.MarketSymbols, forward_diff_ratio, reverse_diff_ratio);
+      }
     }
   }
 }

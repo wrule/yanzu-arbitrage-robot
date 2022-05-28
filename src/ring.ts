@@ -231,11 +231,14 @@ class Ring {
     ];
   }
 
+  private is_trading = false;
+
   public Check() {
     if (
       this.base_market1.MarkReady &&
       this.base_market2.MarkReady &&
-      this.swap_market.MarkReady
+      this.swap_market.MarkReady &&
+      !this.is_trading
     ) {
       const in_qty = 100;
 
@@ -243,12 +246,22 @@ class Ring {
       const forward_diff_ratio = (forward_out_qty - in_qty) / in_qty;
       if (forward_diff_ratio > 0) {
         console.log('正向交易机会');
+        this.is_trading = true;
+        (async () => {
+          await this.forward_transaction(20);
+          this.is_trading = false;
+        })();
       }
 
       const reverse_out_qty = this.sim_reverse_transaction(in_qty);
       const reverse_diff_ratio = (reverse_out_qty - in_qty) / in_qty;
       if (reverse_diff_ratio > 0) {
         console.log('反向交易机会');
+        this.is_trading = true;
+        (async () => {
+          await this.reverse_transaction(20);
+          this.is_trading = false;
+        })();
       }
 
       // console.log('Check: ', this.MarketSymbols, forward_diff_ratio, reverse_diff_ratio);

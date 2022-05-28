@@ -266,7 +266,7 @@ class Ring {
         })();
       }
 
-      if (Math.random() * 1000 < 1) {
+      if (Math.random() * 10000 < 1) {
         console.log('Check: ', this.MarketSymbols, forward_diff_ratio, reverse_diff_ratio);
       }
     }

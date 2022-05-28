@@ -8,11 +8,7 @@ async function main() {
     client,
     'USDT',
     [
-      ['BTC', 'GMT'],
-      ['ETH', 'GMT'],
-      ['BNB', 'GMT'],
-      ['ETH', 'DENT'],
-      ['BTC', 'DOGE'],
+      ['BTC', 'ETH'],
     ],
   );
   await robot.Start();

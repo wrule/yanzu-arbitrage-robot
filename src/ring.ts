@@ -246,6 +246,7 @@ class Ring {
       const forward_diff_ratio = (forward_out_qty - in_qty) / in_qty;
       if (forward_diff_ratio > 0) {
         console.log('正向交易机会');
+        console.log('Find: ', this.MarketSymbols, forward_diff_ratio);
         this.is_trading = true;
         (async () => {
           await this.forward_transaction(20);
@@ -257,6 +258,7 @@ class Ring {
       const reverse_diff_ratio = (reverse_out_qty - in_qty) / in_qty;
       if (reverse_diff_ratio > 0) {
         console.log('反向交易机会');
+        console.log('Find: ', this.MarketSymbols, reverse_diff_ratio);
         this.is_trading = true;
         (async () => {
           await this.reverse_transaction(20);

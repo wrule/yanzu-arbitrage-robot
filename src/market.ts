@@ -1,6 +1,4 @@
-import fs from 'fs';
 import { AxiosResponse } from 'axios';
-import { pair_to_key } from './utils';
 import { TransactionResultBuy, TransactionResultSell } from './ transaction_result';
 
 export

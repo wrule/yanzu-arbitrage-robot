@@ -101,37 +101,10 @@ class Robot {
     this.market_map = await this.load_markets();
     this.rings = this.get_watch_rings();
     const streams = this.get_watch_streams();
-    // this.symbol_markets = this.get_symbol_markets();
     console.log(this.rings.length, streams);
-
-    // const ab = this.market_map.get('LINK/USDT') as Market;
-    // const bc = this.market_map.get('ETH/LINK') as Market;
-    // const ca = this.market_map.get('ETH/USDT') as Market;
-
-    // try {
-    //   const old_time = Number(new Date());
-    //   const result1 = await ab.Buy(20);
-    //   result1.Display();
-    //   const result2 = await bc.Sell(result1.OutQuantity);
-    //   result2.Display();
-    //   const result3 = await ca.Sell(result2.OutQuantity);
-    //   result3.Display();
-    //   console.log(Number(new Date()) - old_time);
-    // } catch (e: any) {
-    //   console.error(e);
-    // }
-
-
-    // console.log(Array.from(this.symbol_markets.keys()));
-    // console.log(Array.from(this.symbol_markets.values())[0]);
-
-
     this.combined_streams = this.client.combinedStreams(
-      // ['btcusdt@depth20@100ms'],
-      // this.watch_market_streams,
       streams,
       this.callbacks,
     );
-    // this.client.aggTradeWS('btcusdt', this.callbacks);
   }
 }

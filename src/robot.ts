@@ -102,6 +102,13 @@ class Robot {
     this.rings = this.get_watch_rings();
     const streams = this.get_watch_streams();
     console.log(this.rings.length, streams);
+
+    // const test_ring = this.rings[0];
+    // console.log(test_ring.MarketSymbols);
+    // console.log('开始交易');
+    // await test_ring.reverse_transaction(100);
+    // console.log('结束交易');
+
     this.combined_streams = this.client.combinedStreams(
       streams,
       this.callbacks,

@@ -1,5 +1,5 @@
 import { Market } from './market';
-import { TransactionResult } from './ transaction_result';
+import { TransactionResult } from './transaction_result';
 
 /**
  * 交易环

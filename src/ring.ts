@@ -251,6 +251,8 @@ class Ring {
     return reverse_diff_ratio;
   }
 
+  private result_list: TransactionResult[] = [];
+
   public Check() {
     if (
       this.base_market1.Ready &&
@@ -263,7 +265,7 @@ class Ring {
         console.log('Find: ', this.symbol, this.forward_diff_ratio);
         this.is_trading = true;
         (async () => {
-          await this.forward_transaction(20);
+          this.result_list = await this.forward_transaction(20);
           this.is_trading = false;
         })();
       }
@@ -273,7 +275,7 @@ class Ring {
         console.log('Find: ', this.symbol, this.reverse_diff_ratio);
         this.is_trading = true;
         (async () => {
-          await this.reverse_transaction(20);
+          this.result_list = await this.reverse_transaction(20);
           this.is_trading = false;
         })();
       }
@@ -296,6 +298,7 @@ class Ring {
       base_market1: this.base_market1.Dump(),
       base_market2: this.base_market2.Dump(),
       swap_market: this.swap_market.Dump(),
+      result_list: this.result_list.map((result) => result.Dump()),
     };
   }
 }

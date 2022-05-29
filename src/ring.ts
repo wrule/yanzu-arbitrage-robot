@@ -255,7 +255,7 @@ class Ring {
 
   private result_list: TransactionResult[] = [];
 
-  public Check() {
+  public async Check() {
     if (
       this.base_market1.Ready &&
       this.base_market2.Ready &&
@@ -267,25 +267,28 @@ class Ring {
           console.log('正向交易机会');
           console.log('Find: ', this.symbol, this.forward_diff_ratio);
           this.is_trading = true;
-          (async () => {
+          // (async () => {
             this.result_list = await this.forward_transaction(20);
             this.is_trading = false;
-            fs.appendFileSync('tns.json', JSON.stringify(this.Dump(), null, 2));
-          })();
+            fs.appendFileSync(
+              'tns.json',
+              `${JSON.stringify(this.Dump(), null, 2)},\n`
+            );
+          // })();
         }
 
         if (this.reverse_diff_ratio > 0) {
           console.log('反向交易机会');
           console.log('Find: ', this.symbol, this.reverse_diff_ratio);
           this.is_trading = true;
-          (async () => {
+          // (async () => {
             this.result_list = await this.reverse_transaction(20);
             this.is_trading = false;
             fs.appendFileSync(
               'tns.json',
               `${JSON.stringify(this.Dump(), null, 2)},\n`
             );
-          })();
+          // })();
         }
 
         if (Math.random() * 50000 < 1) {

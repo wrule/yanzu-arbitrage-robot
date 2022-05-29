@@ -1,6 +1,7 @@
 import { Market } from './market';
 import { TransactionResult } from './transaction_result';
 import fs from 'fs';
+import moment from 'moment';
 
 /**
  * 交易环
@@ -261,30 +262,41 @@ class Ring {
       this.swap_market.Ready &&
       !this.is_trading
     ) {
-      if (this.forward_diff_ratio > 0) {
-        console.log('正向交易机会');
-        console.log('Find: ', this.symbol, this.forward_diff_ratio);
-        this.is_trading = true;
-        (async () => {
-          this.result_list = await this.forward_transaction(20);
-          this.is_trading = false;
-          fs.appendFileSync('tns.json', JSON.stringify(this.Dump(), null, 2));
-        })();
-      }
+      try {
+        if (this.forward_diff_ratio > 0) {
+          console.log('正向交易机会');
+          console.log('Find: ', this.symbol, this.forward_diff_ratio);
+          this.is_trading = true;
+          (async () => {
+            this.result_list = await this.forward_transaction(20);
+            this.is_trading = false;
+            fs.appendFileSync('tns.json', JSON.stringify(this.Dump(), null, 2));
+          })();
+        }
 
-      if (this.reverse_diff_ratio > 0) {
-        console.log('反向交易机会');
-        console.log('Find: ', this.symbol, this.reverse_diff_ratio);
-        this.is_trading = true;
-        (async () => {
-          this.result_list = await this.reverse_transaction(20);
-          this.is_trading = false;
-          fs.appendFileSync('tns.json', JSON.stringify(this.Dump(), null, 2));
-        })();
-      }
+        if (this.reverse_diff_ratio > 0) {
+          console.log('反向交易机会');
+          console.log('Find: ', this.symbol, this.reverse_diff_ratio);
+          this.is_trading = true;
+          (async () => {
+            this.result_list = await this.reverse_transaction(20);
+            this.is_trading = false;
+            fs.appendFileSync(
+              'tns.json',
+              `${JSON.stringify(this.Dump(), null, 2)},\n`
+            );
+          })();
+        }
 
-      if (Math.random() * 50000 < 1) {
-        console.log('Check: ', this.symbol, this.forward_diff_ratio, this.reverse_diff_ratio);
+        if (Math.random() * 50000 < 1) {
+          console.log('Check: ', this.symbol, this.forward_diff_ratio, this.reverse_diff_ratio);
+        }
+      } catch (e) {
+        console.error(e);
+        fs.appendFileSync(
+          'tne.json',
+          `${moment().format('YYYY-MM-DD HH:mm:ss')}\n${e}\n${JSON.stringify(this.Dump(), null, 2)},\n`
+        );
       }
     }
   }

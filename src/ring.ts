@@ -237,6 +237,20 @@ class Ring {
 
   private is_trading = false;
 
+  private get forward_diff_ratio() {
+    const in_qty = 100;
+    const forward_out_qty = this.sim_forward_transaction(in_qty);
+    const forward_diff_ratio = (forward_out_qty - in_qty) / in_qty;
+    return forward_diff_ratio;
+  }
+
+  private get reverse_diff_ratio() {
+    const in_qty = 100;
+    const reverse_out_qty = this.sim_reverse_transaction(in_qty);
+    const reverse_diff_ratio = (reverse_out_qty - in_qty) / in_qty;
+    return reverse_diff_ratio;
+  }
+
   public Check() {
     if (
       this.base_market1.MarkReady &&
@@ -244,13 +258,9 @@ class Ring {
       this.swap_market.MarkReady &&
       !this.is_trading
     ) {
-      const in_qty = 100;
-
-      const forward_out_qty = this.sim_forward_transaction(in_qty);
-      const forward_diff_ratio = (forward_out_qty - in_qty) / in_qty;
-      if (forward_diff_ratio > 0) {
+      if (this.forward_diff_ratio > 0) {
         console.log('正向交易机会');
-        console.log('Find: ', this.MarketSymbols, forward_diff_ratio);
+        console.log('Find: ', this.symbol, this.forward_diff_ratio);
         this.is_trading = true;
         (async () => {
           await this.forward_transaction(20);
@@ -258,11 +268,9 @@ class Ring {
         })();
       }
 
-      const reverse_out_qty = this.sim_reverse_transaction(in_qty);
-      const reverse_diff_ratio = (reverse_out_qty - in_qty) / in_qty;
-      if (reverse_diff_ratio > 0) {
+      if (this.reverse_diff_ratio > 0) {
         console.log('反向交易机会');
-        console.log('Find: ', this.MarketSymbols, reverse_diff_ratio);
+        console.log('Find: ', this.symbol, this.reverse_diff_ratio);
         this.is_trading = true;
         (async () => {
           await this.reverse_transaction(20);
@@ -271,7 +279,7 @@ class Ring {
       }
 
       if (Math.random() * 10000 < 1) {
-        console.log('Check: ', this.MarketSymbols, forward_diff_ratio, reverse_diff_ratio);
+        console.log('Check: ', this.symbol, this.forward_diff_ratio, this.reverse_diff_ratio);
       }
     }
   }

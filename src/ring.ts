@@ -22,6 +22,10 @@ class Ring {
   private base_market2_forward = true;
   private swap_market_forward = true;
 
+  public get symbol() {
+    return `${this.base}:${this.swap1}<->${this.swap2}`;
+  }
+
   /**
    * 初始化与校验
    */

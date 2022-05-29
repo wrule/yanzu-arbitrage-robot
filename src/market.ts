@@ -14,6 +14,11 @@ class Market {
   private sell_book: Book = [];
   private buy_book: Book = [];
 
+  public get mark_ready() {
+    return this.buy_book.length > 0 && this.sell_book.length > 0;
+  }
+
+  //#region 原始数据包装属性
   public get symbol() {
     return this.data.symbol as string;
   }
@@ -22,17 +27,13 @@ class Market {
     return this.data.status as string;
   }
 
+  public get filters() {
+    return this.data.filters as any[];
+  }
+
   public get stepSize() {
     const lot_size_item = this.filters.find((item) => item.filterType === 'LOT_SIZE');
     return Number(lot_size_item?.stepSize);
-  }
-
-  public get mark_ready() {
-    return this.buy_book.length > 0 && this.sell_book.length > 0;
-  }
-
-  public get filters() {
-    return this.data.filters as any[];
   }
 
   public get baseAsset() {
@@ -42,6 +43,7 @@ class Market {
   public get quoteAsset() {
     return this.data.quoteAsset as string;
   }
+  //#endregion
 
   public get SellBook() {
     return this.sell_book;

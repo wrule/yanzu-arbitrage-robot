@@ -18,6 +18,22 @@ class Market {
     return this.buy_book.length > 0 && this.sell_book.length > 0;
   }
 
+  public get SellBook() {
+    return this.sell_book;
+  }
+
+  public get SellPriceEst() {
+    return Number(this.sell_book[0][0]);
+  }
+
+  public get BuyBook() {
+    return this.buy_book;
+  }
+
+  public get BuyPriceEst() {
+    return Number(this.buy_book[0][0]);
+  }
+
   //#region 原始数据包装属性
   public get symbol() {
     return this.data.symbol as string;
@@ -44,22 +60,6 @@ class Market {
     return this.data.quoteAsset as string;
   }
   //#endregion
-
-  public get SellBook() {
-    return this.sell_book;
-  }
-
-  public get SellPriceEst() {
-    return Number(this.sell_book[0][0]);
-  }
-
-  public get BuyBook() {
-    return this.buy_book;
-  }
-
-  public get BuyPriceEst() {
-    return Number(this.buy_book[0][0]);
-  }
 
   /**
    * 更新订单薄

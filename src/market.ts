@@ -11,14 +11,8 @@ class Market {
     public readonly data: any,
   ) { }
 
-  public get filters() {
-    return this.data.filters as any[];
-  }
-
-  public get stepSize() {
-    const lot_size_item = this.filters.find((item) => item.filterType === 'LOT_SIZE');
-    return Number(lot_size_item?.stepSize);
-  }
+  private sell_book: Book = [];
+  private buy_book: Book = [];
 
   public get symbol() {
     return this.data.symbol as string;
@@ -26,6 +20,19 @@ class Market {
 
   public get status() {
     return this.data.status as string;
+  }
+
+  public get stepSize() {
+    const lot_size_item = this.filters.find((item) => item.filterType === 'LOT_SIZE');
+    return Number(lot_size_item?.stepSize);
+  }
+
+  public get MarkReady() {
+    return this.buy_book.length > 0 && this.sell_book.length > 0;
+  }
+
+  public get filters() {
+    return this.data.filters as any[];
   }
 
   public get baseAsset() {
@@ -36,28 +43,20 @@ class Market {
     return this.data.quoteAsset as string;
   }
 
-  public get BuyPriceEst() {
-    return Number(this.buy_book[0][0]);
+  public get SellBook() {
+    return this.sell_book;
   }
 
   public get SellPriceEst() {
     return Number(this.sell_book[0][0]);
   }
 
-  public get MarkReady() {
-    return this.buy_book.length > 0 && this.sell_book.length > 0;
-  }
-
-  private sell_book: Book = [];
-
-  public get SellBook() {
-    return this.sell_book;
-  }
-
-  private buy_book: Book = [];
-
   public get BuyBook() {
     return this.buy_book;
+  }
+
+  public get BuyPriceEst() {
+    return Number(this.buy_book[0][0]);
   }
 
   /**
@@ -100,5 +99,20 @@ class Market {
       { quantity: real_in_qty, },
     );
     return new TransactionResultSell(this.baseAsset, this.quoteAsset, rsp.data);
+  }
+
+  public Dump() {
+    return {
+      symbol: this.symbol,
+      status: this.status,
+      step_size: this.stepSize,
+      mark_ready: this.MarkReady,
+      base_asset: this.baseAsset,
+      quote_asset: this.quoteAsset,
+      sell_book: this.sell_book,
+      sell_price_est: this.SellPriceEst,
+      buy_book: this.buy_book,
+      buy_price_est: this.BuyPriceEst,
+    };
   }
 }

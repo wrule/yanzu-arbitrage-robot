@@ -291,6 +291,8 @@ class Ring {
       swap1: this.swap1,
       swap2: this.swap2,
       fee: this.fee,
+      forward_diff_ratio: this.forward_diff_ratio,
+      reverse_diff_ratio: this.reverse_diff_ratio,
       base_market1: this.base_market1.Dump(),
       base_market2: this.base_market2.Dump(),
       swap_market: this.swap_market.Dump(),

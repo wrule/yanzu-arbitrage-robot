@@ -275,4 +275,17 @@ class Ring {
       }
     }
   }
+
+  public Dump() {
+    return {
+      symbol: this.symbol,
+      base: this.base,
+      swap1: this.swap1,
+      swap2: this.swap2,
+      fee: this.fee,
+      base_market1: this.base_market1.Dump(),
+      base_market2: this.base_market2.Dump(),
+      swap_market: this.swap_market.Dump(),
+    };
+  }
 }

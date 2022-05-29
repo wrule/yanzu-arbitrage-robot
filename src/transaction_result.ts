@@ -30,6 +30,16 @@ abstract class TransactionResult {
   public Display() {
     console.log(`${this.InQuantity}:${this.InAsset} [${this.Price}]>> ${this.OutQuantity}:${this.OutAsset}`);
   }
+
+  public Dump() {
+    return {
+      price: this.Price,
+      in_asset: this.InAsset,
+      in_quantity: this.InQuantity,
+      out_asset: this.OutAsset,
+      out_quantity: this.OutQuantity,
+    };
+  }
 }
 
 export

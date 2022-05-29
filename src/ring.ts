@@ -1,5 +1,6 @@
 import { Market } from './market';
 import { TransactionResult } from './transaction_result';
+import fs from 'fs';
 
 /**
  * 交易环
@@ -267,6 +268,7 @@ class Ring {
         (async () => {
           this.result_list = await this.forward_transaction(20);
           this.is_trading = false;
+          fs.appendFileSync('tns.json', JSON.stringify(this.Dump(), null, 2));
         })();
       }
 
@@ -277,6 +279,7 @@ class Ring {
         (async () => {
           this.result_list = await this.reverse_transaction(20);
           this.is_trading = false;
+          fs.appendFileSync('tns.json', JSON.stringify(this.Dump(), null, 2));
         })();
       }
 

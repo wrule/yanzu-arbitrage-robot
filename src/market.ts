@@ -1,5 +1,5 @@
 import { AxiosResponse } from 'axios';
-import { TransactionResultBuy, TransactionResultSell } from './ transaction_result';
+import { TransactionResultBuy, TransactionResultSell } from './transaction_result';
 
 export
 type Book = [number, number][];

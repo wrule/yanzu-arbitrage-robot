@@ -278,7 +278,7 @@ class Ring {
         })();
       }
 
-      if (Math.random() * 10000 < 1) {
+      if (Math.random() * 50000 < 1) {
         console.log('Check: ', this.symbol, this.forward_diff_ratio, this.reverse_diff_ratio);
       }
     }

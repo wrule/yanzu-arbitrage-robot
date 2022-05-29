@@ -14,7 +14,7 @@ class Market {
   private sell_book: Book = [];
   private buy_book: Book = [];
 
-  public get mark_ready() {
+  public get Ready() {
     return this.buy_book.length > 0 && this.sell_book.length > 0;
   }
 
@@ -108,7 +108,6 @@ class Market {
       symbol: this.symbol,
       status: this.status,
       step_size: this.stepSize,
-      mark_ready: this.mark_ready,
       base_asset: this.baseAsset,
       quote_asset: this.quoteAsset,
       sell_book: this.sell_book,

@@ -253,9 +253,9 @@ class Ring {
 
   public Check() {
     if (
-      this.base_market1.mark_ready &&
-      this.base_market2.mark_ready &&
-      this.swap_market.mark_ready &&
+      this.base_market1.Ready &&
+      this.base_market2.Ready &&
+      this.swap_market.Ready &&
       !this.is_trading
     ) {
       if (this.forward_diff_ratio > 0) {

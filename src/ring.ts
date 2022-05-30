@@ -264,6 +264,7 @@ class Ring {
     ) {
       try {
         // 还是需要加锁
+        // 应该独立出一个有日志可回滚的交易模块
         if (this.forward_diff_ratio > 0) {
           console.log('正向交易机会');
           console.log('Find: ', this.symbol, this.forward_diff_ratio);

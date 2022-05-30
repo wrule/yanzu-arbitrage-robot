@@ -263,6 +263,7 @@ class Ring {
       !this.is_trading
     ) {
       try {
+        // 还是需要加锁
         if (this.forward_diff_ratio > 0) {
           console.log('正向交易机会');
           console.log('Find: ', this.symbol, this.forward_diff_ratio);

@@ -273,12 +273,14 @@ class Ring {
           console.log('正向交易机会');
           console.log('Find: ', this.symbol, this.forward_diff_ratio);
           this.is_trading = true;
+          const dump_object = this.Dump();
           // (async () => {
             this.result_list = await this.forward_transaction(20);
             this.is_trading = false;
+            dump_object.result_list = this.result_list.map((result) => result.Dump());
             fs.appendFileSync(
               'tns.json',
-              `${JSON.stringify(this.Dump(), null, 2)},\n`
+              `${JSON.stringify(dump_object, null, 2)},\n`
             );
           // })();
         }
@@ -287,12 +289,14 @@ class Ring {
           console.log('反向交易机会');
           console.log('Find: ', this.symbol, this.reverse_diff_ratio);
           this.is_trading = true;
+          const dump_object = this.Dump();
           // (async () => {
             this.result_list = await this.reverse_transaction(20);
             this.is_trading = false;
+            dump_object.result_list = this.result_list.map((result) => result.Dump());
             fs.appendFileSync(
               'tns.json',
-              `${JSON.stringify(this.Dump(), null, 2)},\n`
+              `${JSON.stringify(dump_object, null, 2)},\n`
             );
           // })();
         }

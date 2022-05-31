@@ -17,6 +17,10 @@ class Ring {
     this.initialization();
   }
 
+  private snapshot_base_market1!: Market;
+  private snapshot_base_market2!: Market;
+  private snapshot_swap_market!: Market;
+
   private base = '';
   private swap1 = '';
   private swap2 = '';

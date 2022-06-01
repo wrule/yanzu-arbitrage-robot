@@ -56,6 +56,13 @@ extends TransactionResult {
       return Number(this.fills_first.qty);
     }
   }
+
+  public Dump() {
+    return {
+      ...super.Dump(),
+      direction: 'buy',
+    };
+  }
 }
 
 export
@@ -71,5 +78,12 @@ extends TransactionResult {
     } else {
       return Number(this.data.cummulativeQuoteQty);
     }
+  }
+
+  public Dump() {
+    return {
+      ...super.Dump(),
+      direction: 'sell',
+    };
   }
 }

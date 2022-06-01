@@ -269,13 +269,13 @@ class Ring {
       try {
         // 还是需要加锁
         // 应该独立出一个有日志可回滚的交易模块
-        if (this.forward_diff_ratio > 0) {
+        if (this.forward_diff_ratio >= 0.0015) {
           console.log('正向交易机会');
           console.log('Find: ', this.symbol, this.forward_diff_ratio);
           this.is_trading = true;
           const dump_object = this.Dump();
           // (async () => {
-            this.result_list = await this.forward_transaction(20);
+            this.result_list = await this.forward_transaction(15);
             this.is_trading = false;
             dump_object.result_list = this.result_list.map((result) => result.Dump());
             fs.appendFileSync(
@@ -285,13 +285,13 @@ class Ring {
           // })();
         }
 
-        if (this.reverse_diff_ratio > 0) {
+        if (this.reverse_diff_ratio >= 0.0015) {
           console.log('反向交易机会');
           console.log('Find: ', this.symbol, this.reverse_diff_ratio);
           this.is_trading = true;
           const dump_object = this.Dump();
           // (async () => {
-            this.result_list = await this.reverse_transaction(20);
+            this.result_list = await this.reverse_transaction(15);
             this.is_trading = false;
             dump_object.result_list = this.result_list.map((result) => result.Dump());
             fs.appendFileSync(

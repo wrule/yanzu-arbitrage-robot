@@ -8,19 +8,10 @@ export
 class Market {
   public constructor(
     private readonly client: any,
-    public readonly data: any,
+    private readonly data: any,
     private sell_book: Book = [],
     private buy_book: Book = [],
   ) { }
-
-  public Clone() {
-    return new Market(
-      this.client,
-      this.data,
-      this.sell_book.slice(),
-      this.buy_book.slice(),
-    );
-  }
 
   public get Ready() {
     return this.buy_book.length > 0 && this.sell_book.length > 0;

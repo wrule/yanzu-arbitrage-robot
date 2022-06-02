@@ -1,0 +1,3136 @@
+{
+  "symbol": "USDT:BTC<->GMT",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "GMT",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.01233289960061782,
+  "reverse_diff_ratio": 0.0029275655076969544,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "31254.00000000",
+        "0.44650000"
+      ]
+    ],
+    "sell_price_est": 31254,
+    "buy_book": [
+      [
+        "31253.99000000",
+        "7.05468000"
+      ]
+    ],
+    "buy_price_est": 31253.99
+  },
+  "base_market2": {
+    "symbol": "GMTUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1.07500000",
+        "37540.10000000"
+      ]
+    ],
+    "sell_price_est": 1.075,
+    "buy_book": [
+      [
+        "1.07312000",
+        "16071.00000000"
+      ]
+    ],
+    "buy_price_est": 1.07312
+  },
+  "swap_market": {
+    "symbol": "GMTBTC",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00003466",
+        "217.60000000"
+      ]
+    ],
+    "sell_price_est": 0.00003466,
+    "buy_book": [
+      [
+        "0.00003460",
+        "250.80000000"
+      ]
+    ],
+    "buy_price_est": 0.0000346
+  },
+  "result_list": [
+    {
+      "price": 1.08089,
+      "in_asset": "USDT",
+      "in_quantity": 14.916282,
+      "out_asset": "GMT",
+      "out_quantity": 13.786200000000001,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00003453,
+      "in_asset": "GMT",
+      "in_quantity": 13.7,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047259,
+      "direction": "sell"
+    },
+    {
+      "price": 31253.99,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047,
+      "out_asset": "USDT",
+      "out_quantity": 14.67468592,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:ETH<->GMT",
+  "base": "USDT",
+  "swap1": "ETH",
+  "swap2": "GMT",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.012471415320826651,
+  "reverse_diff_ratio": 0.0030287181859191036,
+  "base_market1": {
+    "symbol": "ETHUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "ETH",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1912.81000000",
+        "8.53550000"
+      ]
+    ],
+    "sell_price_est": 1912.81,
+    "buy_book": [
+      [
+        "1912.80000000",
+        "1.78700000"
+      ]
+    ],
+    "buy_price_est": 1912.8
+  },
+  "base_market2": {
+    "symbol": "GMTUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1.07500000",
+        "37540.10000000"
+      ]
+    ],
+    "sell_price_est": 1.075,
+    "buy_book": [
+      [
+        "1.07312000",
+        "16071.00000000"
+      ]
+    ],
+    "buy_price_est": 1.07312
+  },
+  "swap_market": {
+    "symbol": "GMTETH",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "ETH",
+    "sell_book": [
+      [
+        "0.00056640",
+        "361.70000000"
+      ]
+    ],
+    "sell_price_est": 0.0005664,
+    "buy_book": [
+      [
+        "0.00056540",
+        "738.90000000"
+      ]
+    ],
+    "buy_price_est": 0.0005654
+  },
+  "result_list": [
+    {
+      "price": 1.08089,
+      "in_asset": "USDT",
+      "in_quantity": 14.916282,
+      "out_asset": "GMT",
+      "out_quantity": 13.786200000000001,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0005643,
+      "in_asset": "GMT",
+      "in_quantity": 13.7,
+      "out_asset": "ETH",
+      "out_quantity": 0.00772318,
+      "direction": "sell"
+    },
+    {
+      "price": 1912.65,
+      "in_asset": "ETH",
+      "in_quantity": 0.0077,
+      "out_asset": "USDT",
+      "out_quantity": 14.712677589999998,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->GMT",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "GMT",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.010728048870305002,
+  "reverse_diff_ratio": 0.003906427411971407,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "31085.09000000",
+        "1.74940000"
+      ]
+    ],
+    "sell_price_est": 31085.09,
+    "buy_book": [
+      [
+        "31085.08000000",
+        "2.23513000"
+      ]
+    ],
+    "buy_price_est": 31085.08
+  },
+  "base_market2": {
+    "symbol": "GMTUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1.07000000",
+        "81645.90000000"
+      ]
+    ],
+    "sell_price_est": 1.07,
+    "buy_book": [
+      [
+        "1.06998000",
+        "17.50000000"
+      ]
+    ],
+    "buy_price_est": 1.06998
+  },
+  "swap_market": {
+    "symbol": "GMTBTC",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00003469",
+        "277.10000000"
+      ]
+    ],
+    "sell_price_est": 0.00003469,
+    "buy_book": [
+      [
+        "0.00003466",
+        "22.90000000"
+      ]
+    ],
+    "buy_price_est": 0.00003466
+  },
+  "result_list": [
+    {
+      "price": 1.07189,
+      "in_asset": "USDT",
+      "in_quantity": 14.899271,
+      "out_asset": "GMT",
+      "out_quantity": 13.8861,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00003447,
+      "in_asset": "GMT",
+      "in_quantity": 13.8,
+      "out_asset": "BTC",
+      "out_quantity": 0.0004752,
+      "direction": "sell"
+    },
+    {
+      "price": 31083.52,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047,
+      "out_asset": "USDT",
+      "out_quantity": 14.59464515,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:ETH<->GMT",
+  "base": "USDT",
+  "swap1": "ETH",
+  "swap2": "GMT",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.011707449723933365,
+  "reverse_diff_ratio": 0.0027527329990243744,
+  "base_market1": {
+    "symbol": "ETHUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "ETH",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1902.38000000",
+        "17.14170000"
+      ]
+    ],
+    "sell_price_est": 1902.38,
+    "buy_book": [
+      [
+        "1902.37000000",
+        "8.68690000"
+      ]
+    ],
+    "buy_price_est": 1902.37
+  },
+  "base_market2": {
+    "symbol": "GMTUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1.07000000",
+        "81645.90000000"
+      ]
+    ],
+    "sell_price_est": 1.07,
+    "buy_book": [
+      [
+        "1.06998000",
+        "17.50000000"
+      ]
+    ],
+    "buy_price_est": 1.06998
+  },
+  "swap_market": {
+    "symbol": "GMTETH",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "ETH",
+    "sell_book": [
+      [
+        "0.00056740",
+        "938.80000000"
+      ]
+    ],
+    "sell_price_est": 0.0005674,
+    "buy_book": [
+      [
+        "0.00056570",
+        "938.80000000"
+      ]
+    ],
+    "buy_price_est": 0.0005657
+  },
+  "result_list": [
+    {
+      "price": 1.07141,
+      "in_asset": "USDT",
+      "in_quantity": 14.99974,
+      "out_asset": "GMT",
+      "out_quantity": 13.986,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0005633,
+      "in_asset": "GMT",
+      "in_quantity": 13.9,
+      "out_asset": "ETH",
+      "out_quantity": 0.007822039999999999,
+      "direction": "sell"
+    },
+    {
+      "price": 1901.01,
+      "in_asset": "ETH",
+      "in_quantity": 0.0078,
+      "out_asset": "USDT",
+      "out_quantity": 14.81305012,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:ETH<->FTM",
+  "base": "USDT",
+  "swap1": "ETH",
+  "swap2": "FTM",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.00167159978709023,
+  "reverse_diff_ratio": -0.012958535275974441,
+  "base_market1": {
+    "symbol": "ETHUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "ETH",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1891.00000000",
+        "0.00560000"
+      ]
+    ],
+    "sell_price_est": 1891,
+    "buy_book": [
+      [
+        "1890.06000000",
+        "7.18520000"
+      ]
+    ],
+    "buy_price_est": 1890.06
+  },
+  "base_market2": {
+    "symbol": "FTMUSDT",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "FTM",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.39290000",
+        "886.00000000"
+      ]
+    ],
+    "sell_price_est": 0.3929,
+    "buy_book": [
+      [
+        "0.39270000",
+        "1620.00000000"
+      ]
+    ],
+    "buy_price_est": 0.3927
+  },
+  "swap_market": {
+    "symbol": "FTMETH",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "FTM",
+    "quote_asset": "ETH",
+    "sell_book": [
+      [
+        "0.00020670",
+        "2546.10000000"
+      ]
+    ],
+    "sell_price_est": 0.0002067,
+    "buy_book": [
+      [
+        "0.00020580",
+        "17810.80000000"
+      ]
+    ],
+    "buy_price_est": 0.0002058
+  },
+  "result_list": [
+    {
+      "price": 1899.31,
+      "in_asset": "USDT",
+      "in_quantity": 14.814618,
+      "out_asset": "ETH",
+      "out_quantity": 0.0077922,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0002068,
+      "in_asset": "ETH",
+      "in_quantity": 0.00777568,
+      "out_asset": "FTM",
+      "out_quantity": 37.562400000000004,
+      "direction": "buy"
+    },
+    {
+      "price": 0.3923,
+      "in_asset": "FTM",
+      "in_quantity": 37,
+      "out_asset": "USDT",
+      "out_quantity": 14.5005849,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:ETH<->TRX",
+  "base": "USDT",
+  "swap1": "ETH",
+  "swap2": "TRX",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0017594333283678055,
+  "reverse_diff_ratio": -0.009612623011214794,
+  "base_market1": {
+    "symbol": "ETHUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "ETH",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1891.00000000",
+        "0.00560000"
+      ]
+    ],
+    "sell_price_est": 1891,
+    "buy_book": [
+      [
+        "1890.06000000",
+        "7.18520000"
+      ]
+    ],
+    "buy_price_est": 1890.06
+  },
+  "base_market2": {
+    "symbol": "TRXUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "TRX",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.08857000",
+        "59857.60000000"
+      ]
+    ],
+    "sell_price_est": 0.08857,
+    "buy_book": [
+      [
+        "0.08856000",
+        "2595.40000000"
+      ]
+    ],
+    "buy_price_est": 0.08856
+  },
+  "swap_market": {
+    "symbol": "TRXETH",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "TRX",
+    "quote_asset": "ETH",
+    "sell_book": [
+      [
+        "0.00004661",
+        "10486.00000000"
+      ]
+    ],
+    "sell_price_est": 0.00004661,
+    "buy_book": [
+      [
+        "0.00004655",
+        "21773.00000000"
+      ]
+    ],
+    "buy_price_est": 0.00004655
+  },
+  "result_list": [
+    {
+      "price": 1899.31,
+      "in_asset": "USDT",
+      "in_quantity": 14.814618,
+      "out_asset": "ETH",
+      "out_quantity": 0.0077922,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00004668,
+      "in_asset": "ETH",
+      "in_quantity": 0.00774888,
+      "out_asset": "TRX",
+      "out_quantity": 165.834,
+      "direction": "buy"
+    },
+    {
+      "price": 0.08859,
+      "in_asset": "TRX",
+      "in_quantity": 165.8,
+      "out_asset": "USDT",
+      "out_quantity": 14.67353378,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:ETH<->GMT",
+  "base": "USDT",
+  "swap1": "ETH",
+  "swap2": "GMT",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.010536806004008099,
+  "reverse_diff_ratio": 0.0037061658798931774,
+  "base_market1": {
+    "symbol": "ETHUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "ETH",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1905.48000000",
+        "6.30340000"
+      ]
+    ],
+    "sell_price_est": 1905.48,
+    "buy_book": [
+      [
+        "1905.47000000",
+        "4.21250000"
+      ]
+    ],
+    "buy_price_est": 1905.47
+  },
+  "base_market2": {
+    "symbol": "GMTUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1.08000000",
+        "335343.90000000"
+      ]
+    ],
+    "sell_price_est": 1.08,
+    "buy_book": [
+      [
+        "1.07999000",
+        "5661.60000000"
+      ]
+    ],
+    "buy_price_est": 1.07999
+  },
+  "swap_market": {
+    "symbol": "GMTETH",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "ETH",
+    "sell_book": [
+      [
+        "0.00057110",
+        "195.00000000"
+      ]
+    ],
+    "sell_price_est": 0.0005711,
+    "buy_book": [
+      [
+        "0.00057060",
+        "1470.80000000"
+      ]
+    ],
+    "buy_price_est": 0.0005706
+  },
+  "result_list": [
+    {
+      "price": 1.08195,
+      "in_asset": "USDT",
+      "in_quantity": 14.93091,
+      "out_asset": "GMT",
+      "out_quantity": 13.786200000000001,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0005674,
+      "in_asset": "GMT",
+      "in_quantity": 13.7,
+      "out_asset": "ETH",
+      "out_quantity": 0.00776561,
+      "direction": "sell"
+    },
+    {
+      "price": 1905.37,
+      "in_asset": "ETH",
+      "in_quantity": 0.0077,
+      "out_asset": "USDT",
+      "out_quantity": 14.656677649999999,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->GMT",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "GMT",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.009957227295614076,
+  "reverse_diff_ratio": 0.0034276729398673923,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "31136.06000000",
+        "2.58405000"
+      ]
+    ],
+    "sell_price_est": 31136.06,
+    "buy_book": [
+      [
+        "31136.05000000",
+        "0.19166000"
+      ]
+    ],
+    "buy_price_est": 31136.05
+  },
+  "base_market2": {
+    "symbol": "GMTUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1.08000000",
+        "335343.90000000"
+      ]
+    ],
+    "sell_price_est": 1.08,
+    "buy_book": [
+      [
+        "1.07999000",
+        "5661.60000000"
+      ]
+    ],
+    "buy_price_est": 1.07999
+  },
+  "swap_market": {
+    "symbol": "GMTBTC",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00003493",
+        "195.00000000"
+      ]
+    ],
+    "sell_price_est": 0.00003493,
+    "buy_book": [
+      [
+        "0.00003491",
+        "427.60000000"
+      ]
+    ],
+    "buy_price_est": 0.00003491
+  },
+  "result_list": [
+    {
+      "price": 1.08195,
+      "in_asset": "USDT",
+      "in_quantity": 14.93091,
+      "out_asset": "GMT",
+      "out_quantity": 13.786200000000001,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00003474,
+      "in_asset": "GMT",
+      "in_quantity": 13.7,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047545,
+      "direction": "sell"
+    },
+    {
+      "price": 31135.18,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047,
+      "out_asset": "USDT",
+      "out_quantity": 14.618901070000001,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFII",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFII",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.008976238675215456,
+  "reverse_diff_ratio": -0.030499731730543118,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "31141.17000000",
+        "0.00086000"
+      ]
+    ],
+    "sell_price_est": 31141.17,
+    "buy_book": [
+      [
+        "31141.13000000",
+        "7.87968000"
+      ]
+    ],
+    "buy_price_est": 31141.13
+  },
+  "base_market2": {
+    "symbol": "YFIIUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "522.00000000",
+        "2.23460000"
+      ]
+    ],
+    "sell_price_est": 522,
+    "buy_book": [
+      [
+        "520.00000000",
+        "8.17120000"
+      ]
+    ],
+    "buy_price_est": 520
+  },
+  "swap_market": {
+    "symbol": "YFIIBTC",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.01650000",
+        "4.20820000"
+      ]
+    ],
+    "sell_price_est": 0.0165,
+    "buy_book": [
+      [
+        "0.01630000",
+        "27.06160000"
+      ]
+    ],
+    "buy_price_est": 0.0163
+  },
+  "result_list": [
+    {
+      "price": 31141.17,
+      "in_asset": "USDT",
+      "in_quantity": 14.9477616,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0167,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047929,
+      "out_asset": "YFII",
+      "out_quantity": 0.0286713,
+      "direction": "buy"
+    },
+    {
+      "price": 515,
+      "in_asset": "YFII",
+      "in_quantity": 0.0286,
+      "out_asset": "USDT",
+      "out_quantity": 14.729,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->CAKE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "CAKE",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.013029225023739599,
+  "reverse_diff_ratio": 0.005505656893543431,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "31107.44000000",
+        "3.79169000"
+      ]
+    ],
+    "sell_price_est": 31107.44,
+    "buy_book": [
+      [
+        "31107.43000000",
+        "0.02749000"
+      ]
+    ],
+    "buy_price_est": 31107.43
+  },
+  "base_market2": {
+    "symbol": "CAKEUSDT",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "4.42000000",
+        "20187.40000000"
+      ]
+    ],
+    "sell_price_est": 4.42,
+    "buy_book": [
+      [
+        "4.41900000",
+        "393.52000000"
+      ]
+    ],
+    "buy_price_est": 4.419
+  },
+  "swap_market": {
+    "symbol": "CAKEBTC",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00014350",
+        "124.35000000"
+      ]
+    ],
+    "sell_price_est": 0.0001435,
+    "buy_book": [
+      [
+        "0.00014330",
+        "50.00000000"
+      ]
+    ],
+    "buy_price_est": 0.0001433
+  },
+  "result_list": [
+    {
+      "price": 4.446,
+      "in_asset": "USDT",
+      "in_quantity": 14.98302,
+      "out_asset": "CAKE",
+      "out_quantity": 3.3666300000000002,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0001425,
+      "in_asset": "CAKE",
+      "in_quantity": 3.36,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047846,
+      "direction": "sell"
+    },
+    {
+      "price": 31106.58,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047,
+      "out_asset": "USDT",
+      "out_quantity": 14.60547251,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->TRX",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "TRX",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0015465619593106794,
+  "reverse_diff_ratio": -0.012189132873043889,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30690.00000000",
+        "0.00485000"
+      ]
+    ],
+    "sell_price_est": 30690,
+    "buy_book": [
+      [
+        "30655.50000000",
+        "21.33067000"
+      ]
+    ],
+    "buy_price_est": 30655.5
+  },
+  "base_market2": {
+    "symbol": "TRXUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "TRX",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.08880000",
+        "59491.90000000"
+      ]
+    ],
+    "sell_price_est": 0.0888,
+    "buy_book": [
+      [
+        "0.08879000",
+        "84505.80000000"
+      ]
+    ],
+    "buy_price_est": 0.08879
+  },
+  "swap_market": {
+    "symbol": "TRXBTC",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "TRX",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00000288",
+        "316145.00000000"
+      ]
+    ],
+    "sell_price_est": 0.00000288,
+    "buy_book": [
+      [
+        "0.00000287",
+        "1640039.00000000"
+      ]
+    ],
+    "buy_price_est": 0.00000287
+  },
+  "result_list": [
+    {
+      "price": 30815.59,
+      "in_asset": "USDT",
+      "in_quantity": 14.7914832,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00000288,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047808,
+      "out_asset": "TRX",
+      "out_quantity": 165.834,
+      "direction": "buy"
+    },
+    {
+      "price": 0.08869,
+      "in_asset": "TRX",
+      "in_quantity": 165.8,
+      "out_asset": "USDT",
+      "out_quantity": 14.6900972,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->C98",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "C98",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0015069100149329984,
+  "reverse_diff_ratio": -0.012666015664360798,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30670.00000000",
+        "0.00094000"
+      ]
+    ],
+    "sell_price_est": 30670,
+    "buy_book": [
+      [
+        "30655.50000000",
+        "21.32586000"
+      ]
+    ],
+    "buy_price_est": 30655.5
+  },
+  "base_market2": {
+    "symbol": "C98USDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "C98",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.66400000",
+        "6750.60000000"
+      ]
+    ],
+    "sell_price_est": 0.664,
+    "buy_book": [
+      [
+        "0.66300000",
+        "12400.40000000"
+      ]
+    ],
+    "buy_price_est": 0.663
+  },
+  "swap_market": {
+    "symbol": "C98BTC",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "C98",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00002152",
+        "350.40000000"
+      ]
+    ],
+    "sell_price_est": 0.00002152,
+    "buy_book": [
+      [
+        "0.00002145",
+        "301.40000000"
+      ]
+    ],
+    "buy_price_est": 0.00002145
+  },
+  "result_list": [
+    {
+      "price": 30780.38,
+      "in_asset": "USDT",
+      "in_quantity": 14.7745824,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00002153,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047796,
+      "out_asset": "C98",
+      "out_quantity": 22.177799999999998,
+      "direction": "buy"
+    },
+    {
+      "price": 0.662,
+      "in_asset": "C98",
+      "in_quantity": 22.1,
+      "out_asset": "USDT",
+      "out_quantity": 14.615569800000001,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->CAKE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "CAKE",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0016593614369500643,
+  "reverse_diff_ratio": -0.0101158988436201,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30690.00000000",
+        "0.00485000"
+      ]
+    ],
+    "sell_price_est": 30690,
+    "buy_book": [
+      [
+        "30655.50000000",
+        "21.33067000"
+      ]
+    ],
+    "buy_price_est": 30655.5
+  },
+  "base_market2": {
+    "symbol": "CAKEUSDT",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "4.40600000",
+        "985.59000000"
+      ]
+    ],
+    "sell_price_est": 4.406,
+    "buy_book": [
+      [
+        "4.40300000",
+        "69.98000000"
+      ]
+    ],
+    "buy_price_est": 4.403
+  },
+  "swap_market": {
+    "symbol": "CAKEBTC",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00014280",
+        "153.11000000"
+      ]
+    ],
+    "sell_price_est": 0.0001428,
+    "buy_book": [
+      [
+        "0.00014270",
+        "55.11000000"
+      ]
+    ],
+    "buy_price_est": 0.0001427
+  },
+  "result_list": [
+    {
+      "price": 30780.38,
+      "in_asset": "USDT",
+      "in_quantity": 14.7745824,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.000143,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047905,
+      "out_asset": "CAKE",
+      "out_quantity": 3.34665,
+      "direction": "buy"
+    },
+    {
+      "price": 4.396,
+      "in_asset": "CAKE",
+      "in_quantity": 3.34,
+      "out_asset": "USDT",
+      "out_quantity": 14.667957359999999,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFI",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFI",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0019363842065986603,
+  "reverse_diff_ratio": -0.010864458299900832,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30700.00000000",
+        "4.94624000"
+      ]
+    ],
+    "sell_price_est": 30700,
+    "buy_book": [
+      [
+        "30655.50000000",
+        "21.33197000"
+      ]
+    ],
+    "buy_price_est": 30655.5
+  },
+  "base_market2": {
+    "symbol": "YFIUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "YFI",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "7839.16000000",
+        "0.03000000"
+      ]
+    ],
+    "sell_price_est": 7839.16,
+    "buy_book": [
+      [
+        "7833.30000000",
+        "0.03000000"
+      ]
+    ],
+    "buy_price_est": 7833.3
+  },
+  "swap_market": {
+    "symbol": "YFIBTC",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "YFI",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.25390000",
+        "0.00003000"
+      ]
+    ],
+    "sell_price_est": 0.2539,
+    "buy_book": [
+      [
+        "0.25370000",
+        "0.00724000"
+      ]
+    ],
+    "buy_price_est": 0.2537
+  },
+  "result_list": [
+    {
+      "price": 30780.38,
+      "in_asset": "USDT",
+      "in_quantity": 14.7745824,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.254,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047752,
+      "out_asset": "YFI",
+      "out_quantity": 0.00187812,
+      "direction": "buy"
+    },
+    {
+      "price": 7815.36,
+      "in_asset": "YFI",
+      "in_quantity": 0.00187,
+      "out_asset": "USDT",
+      "out_quantity": 14.60010848,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->C98",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "C98",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0016547167924029793,
+  "reverse_diff_ratio": -0.013287905352480039,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30605.00000000",
+        "273.38108000"
+      ]
+    ],
+    "sell_price_est": 30605,
+    "buy_book": [
+      [
+        "30604.32000000",
+        "0.56610000"
+      ]
+    ],
+    "buy_price_est": 30604.32
+  },
+  "base_market2": {
+    "symbol": "C98USDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "C98",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.66300000",
+        "2947.40000000"
+      ]
+    ],
+    "sell_price_est": 0.663,
+    "buy_book": [
+      [
+        "0.66200000",
+        "13218.00000000"
+      ]
+    ],
+    "buy_price_est": 0.662
+  },
+  "swap_market": {
+    "symbol": "C98BTC",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "C98",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00002153",
+        "350.50000000"
+      ]
+    ],
+    "sell_price_est": 0.00002153,
+    "buy_book": [
+      [
+        "0.00002144",
+        "301.80000000"
+      ]
+    ],
+    "buy_price_est": 0.00002144
+  },
+  "result_list": [
+    {
+      "price": 30747.98,
+      "in_asset": "USDT",
+      "in_quantity": 14.7590304,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00002154,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047818,
+      "out_asset": "C98",
+      "out_quantity": 22.177799999999998,
+      "direction": "buy"
+    },
+    {
+      "price": 0.661,
+      "in_asset": "C98",
+      "in_quantity": 22.1,
+      "out_asset": "USDT",
+      "out_quantity": 14.5934919,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFI",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFI",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0029948762851471143,
+  "reverse_diff_ratio": -0.012322818370012669,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30605.00000000",
+        "273.38108000"
+      ]
+    ],
+    "sell_price_est": 30605,
+    "buy_book": [
+      [
+        "30604.32000000",
+        "0.56610000"
+      ]
+    ],
+    "buy_price_est": 30604.32
+  },
+  "base_market2": {
+    "symbol": "YFIUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "YFI",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "7828.36000000",
+        "0.03000000"
+      ]
+    ],
+    "sell_price_est": 7828.36,
+    "buy_book": [
+      [
+        "7817.31000000",
+        "0.03000000"
+      ]
+    ],
+    "buy_price_est": 7817.31
+  },
+  "swap_market": {
+    "symbol": "YFIBTC",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "YFI",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.25390000",
+        "0.00307000"
+      ]
+    ],
+    "sell_price_est": 0.2539,
+    "buy_book": [
+      [
+        "0.25340000",
+        "0.00100000"
+      ]
+    ],
+    "buy_price_est": 0.2534
+  },
+  "result_list": [
+    {
+      "price": 30747.98,
+      "in_asset": "USDT",
+      "in_quantity": 14.7590304,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.254,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047752,
+      "out_asset": "YFI",
+      "out_quantity": 0.00187812,
+      "direction": "buy"
+    },
+    {
+      "price": 7805.76,
+      "in_asset": "YFI",
+      "in_quantity": 0.00187,
+      "out_asset": "USDT",
+      "out_quantity": 14.582174429999998,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->DOGE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "DOGE",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.002289272345754796,
+  "reverse_diff_ratio": -0.012000463563524591,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30605.00000000",
+        "273.38108000"
+      ]
+    ],
+    "sell_price_est": 30605,
+    "buy_book": [
+      [
+        "30604.32000000",
+        "0.56610000"
+      ]
+    ],
+    "buy_price_est": 30604.32
+  },
+  "base_market2": {
+    "symbol": "DOGEUSDT",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "DOGE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.08462000",
+        "30051.00000000"
+      ]
+    ],
+    "sell_price_est": 0.08462,
+    "buy_book": [
+      [
+        "0.08461000",
+        "197367.00000000"
+      ]
+    ],
+    "buy_price_est": 0.08461
+  },
+  "swap_market": {
+    "symbol": "DOGEBTC",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "DOGE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00000275",
+        "1360666.00000000"
+      ]
+    ],
+    "sell_price_est": 0.00000275,
+    "buy_book": [
+      [
+        "0.00000274",
+        "583324.00000000"
+      ]
+    ],
+    "buy_price_est": 0.00000274
+  },
+  "result_list": [
+    {
+      "price": 30848.3,
+      "in_asset": "USDT",
+      "in_quantity": 14.807184,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00000275,
+      "in_asset": "BTC",
+      "in_quantity": 0.0004785,
+      "out_asset": "DOGE",
+      "out_quantity": 173.826,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0845,
+      "in_asset": "DOGE",
+      "in_quantity": 173,
+      "out_asset": "USDT",
+      "out_quantity": 14.6038815,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->CAKE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "CAKE",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0037569142736329298,
+  "reverse_diff_ratio": -0.010870547035403036,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30605.00000000",
+        "273.38108000"
+      ]
+    ],
+    "sell_price_est": 30605,
+    "buy_book": [
+      [
+        "30604.32000000",
+        "0.56610000"
+      ]
+    ],
+    "buy_price_est": 30604.32
+  },
+  "base_market2": {
+    "symbol": "CAKEUSDT",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "4.40200000",
+        "65.03000000"
+      ]
+    ],
+    "sell_price_est": 4.402,
+    "buy_book": [
+      [
+        "4.40000000",
+        "263.39000000"
+      ]
+    ],
+    "buy_price_est": 4.4
+  },
+  "swap_market": {
+    "symbol": "CAKEBTC",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00014280",
+        "276.63000000"
+      ]
+    ],
+    "sell_price_est": 0.0001428,
+    "buy_book": [
+      [
+        "0.00014270",
+        "16.25000000"
+      ]
+    ],
+    "buy_price_est": 0.0001427
+  },
+  "result_list": [
+    {
+      "price": 30848.3,
+      "in_asset": "USDT",
+      "in_quantity": 14.807184,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0001431,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047938,
+      "out_asset": "CAKE",
+      "out_quantity": 3.34665,
+      "direction": "buy"
+    },
+    {
+      "price": 4.394,
+      "in_asset": "CAKE",
+      "in_quantity": 3.34,
+      "out_asset": "USDT",
+      "out_quantity": 14.66128404,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFII",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFII",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.004243256148321422,
+  "reverse_diff_ratio": -0.0181574089767507,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30691.75000000",
+        "2.94967000"
+      ]
+    ],
+    "sell_price_est": 30691.75,
+    "buy_book": [
+      [
+        "30691.74000000",
+        "0.54456000"
+      ]
+    ],
+    "buy_price_est": 30691.74
+  },
+  "base_market2": {
+    "symbol": "YFIIUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "508.00000000",
+        "11.83630000"
+      ]
+    ],
+    "sell_price_est": 508,
+    "buy_book": [
+      [
+        "507.00000000",
+        "17.15120000"
+      ]
+    ],
+    "buy_price_est": 507
+  },
+  "swap_market": {
+    "symbol": "YFIIBTC",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.01640000",
+        "2.52860000"
+      ]
+    ],
+    "sell_price_est": 0.0164,
+    "buy_book": [
+      [
+        "0.01630000",
+        "35.23290000"
+      ]
+    ],
+    "buy_price_est": 0.0163
+  },
+  "result_list": [
+    {
+      "price": 30691.1,
+      "in_asset": "USDT",
+      "in_quantity": 14.731728,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0165,
+      "in_asset": "BTC",
+      "in_quantity": 0.0004785,
+      "out_asset": "YFII",
+      "out_quantity": 0.028971,
+      "direction": "buy"
+    },
+    {
+      "price": 504,
+      "in_asset": "YFII",
+      "in_quantity": 0.0289,
+      "out_asset": "USDT",
+      "out_quantity": 14.5510344,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFII",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFII",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.02215691648786418,
+  "reverse_diff_ratio": 0.002011840123929005,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30525.27000000",
+        "3.33692000"
+      ]
+    ],
+    "sell_price_est": 30525.27,
+    "buy_book": [
+      [
+        "30525.26000000",
+        "0.10414000"
+      ]
+    ],
+    "buy_price_est": 30525.26
+  },
+  "base_market2": {
+    "symbol": "YFIIUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "489.00000000",
+        "1.91080000"
+      ]
+    ],
+    "sell_price_est": 489,
+    "buy_book": [
+      [
+        "488.00000000",
+        "5.10200000"
+      ]
+    ],
+    "buy_price_est": 488
+  },
+  "swap_market": {
+    "symbol": "YFIIBTC",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.01630000",
+        "5.62470000"
+      ]
+    ],
+    "sell_price_est": 0.0163,
+    "buy_book": [
+      [
+        "0.01610000",
+        "1.23060000"
+      ]
+    ],
+    "buy_price_est": 0.0161
+  },
+  "result_list": [
+    {
+      "price": 491,
+      "in_asset": "USDT",
+      "in_quantity": 14.9755,
+      "out_asset": "YFII",
+      "out_quantity": 0.0304695,
+      "direction": "buy"
+    },
+    {
+      "price": 0.016,
+      "in_asset": "YFII",
+      "in_quantity": 0.0304,
+      "out_asset": "BTC",
+      "out_quantity": 0.00048591,
+      "direction": "sell"
+    },
+    {
+      "price": 30523.46,
+      "in_asset": "BTC",
+      "in_quantity": 0.00048,
+      "out_asset": "USDT",
+      "out_quantity": 14.636609539999998,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->DOGE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "DOGE",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0015879481085029567,
+  "reverse_diff_ratio": -0.011366976433673131,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30050.00000000",
+        "39.81588000"
+      ]
+    ],
+    "sell_price_est": 30050,
+    "buy_book": [
+      [
+        "30049.30000000",
+        "66.98489000"
+      ]
+    ],
+    "buy_price_est": 30049.3
+  },
+  "base_market2": {
+    "symbol": "DOGEUSDT",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "DOGE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.08182000",
+        "88824.00000000"
+      ]
+    ],
+    "sell_price_est": 0.08182,
+    "buy_book": [
+      [
+        "0.08181000",
+        "16873.00000000"
+      ]
+    ],
+    "buy_price_est": 0.08181
+  },
+  "swap_market": {
+    "symbol": "DOGEBTC",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "DOGE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00000271",
+        "238398.00000000"
+      ]
+    ],
+    "sell_price_est": 0.00000271,
+    "buy_book": [
+      [
+        "0.00000270",
+        "1275022.00000000"
+      ]
+    ],
+    "buy_price_est": 0.0000027
+  },
+  "result_list": [
+    {
+      "price": 30175.22,
+      "in_asset": "USDT",
+      "in_quantity": 14.7858578,
+      "out_asset": "BTC",
+      "out_quantity": 0.00048951,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00000271,
+      "in_asset": "BTC",
+      "in_quantity": 0.0004878,
+      "out_asset": "DOGE",
+      "out_quantity": 179.82,
+      "direction": "buy"
+    },
+    {
+      "price": 0.08174,
+      "in_asset": "DOGE",
+      "in_quantity": 179,
+      "out_asset": "USDT",
+      "out_quantity": 14.61682854,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFI",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFI",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0022755825390515837,
+  "reverse_diff_ratio": -0.010542843472518087,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30005.00000000",
+        "858.54468000"
+      ]
+    ],
+    "sell_price_est": 30005,
+    "buy_book": [
+      [
+        "30004.93000000",
+        "0.04000000"
+      ]
+    ],
+    "buy_price_est": 30004.93
+  },
+  "base_market2": {
+    "symbol": "YFIUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "YFI",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "7649.14000000",
+        "0.03000000"
+      ]
+    ],
+    "sell_price_est": 7649.14,
+    "buy_book": [
+      [
+        "7640.46000000",
+        "0.05775000"
+      ]
+    ],
+    "buy_price_est": 7640.46
+  },
+  "swap_market": {
+    "symbol": "YFIBTC",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "YFI",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.25330000",
+        "0.00391000"
+      ]
+    ],
+    "sell_price_est": 0.2533,
+    "buy_book": [
+      [
+        "0.25300000",
+        "0.00587000"
+      ]
+    ],
+    "buy_price_est": 0.253
+  },
+  "result_list": [
+    {
+      "price": 30005,
+      "in_asset": "USDT",
+      "in_quantity": 14.70245,
+      "out_asset": "BTC",
+      "out_quantity": 0.00048951,
+      "direction": "buy"
+    },
+    {
+      "price": 0.2536,
+      "in_asset": "BTC",
+      "in_quantity": 0.00048944,
+      "out_asset": "YFI",
+      "out_quantity": 0.00192807,
+      "direction": "buy"
+    },
+    {
+      "price": 7627.67,
+      "in_asset": "YFI",
+      "in_quantity": 0.00192,
+      "out_asset": "USDT",
+      "out_quantity": 14.63048127,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->CAKE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "CAKE",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0023556795069336546,
+  "reverse_diff_ratio": -0.010377063363712438,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30005.00000000",
+        "858.54468000"
+      ]
+    ],
+    "sell_price_est": 30005,
+    "buy_book": [
+      [
+        "30004.93000000",
+        "0.04000000"
+      ]
+    ],
+    "buy_price_est": 30004.93
+  },
+  "base_market2": {
+    "symbol": "CAKEUSDT",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "4.36200000",
+        "557.33000000"
+      ]
+    ],
+    "sell_price_est": 4.362,
+    "buy_book": [
+      [
+        "4.35900000",
+        "943.03000000"
+      ]
+    ],
+    "buy_price_est": 4.359
+  },
+  "swap_market": {
+    "symbol": "CAKEBTC",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00014450",
+        "82.80000000"
+      ]
+    ],
+    "sell_price_est": 0.0001445,
+    "buy_book": [
+      [
+        "0.00014430",
+        "153.79000000"
+      ]
+    ],
+    "buy_price_est": 0.0001443
+  },
+  "result_list": [
+    {
+      "price": 30005,
+      "in_asset": "USDT",
+      "in_quantity": 14.70245,
+      "out_asset": "BTC",
+      "out_quantity": 0.00048951,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0001448,
+      "in_asset": "BTC",
+      "in_quantity": 0.00048942,
+      "out_asset": "CAKE",
+      "out_quantity": 3.37662,
+      "direction": "buy"
+    },
+    {
+      "price": 4.35,
+      "in_asset": "CAKE",
+      "in_quantity": 3.37,
+      "out_asset": "USDT",
+      "out_quantity": 14.644840499999999,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:ETH<->GMT",
+  "base": "USDT",
+  "swap1": "ETH",
+  "swap2": "GMT",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.011223923778699288,
+  "reverse_diff_ratio": 0.0038467156082245425,
+  "base_market1": {
+    "symbol": "ETHUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "ETH",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1782.23000000",
+        "3.83790000"
+      ]
+    ],
+    "sell_price_est": 1782.23,
+    "buy_book": [
+      [
+        "1782.22000000",
+        "13.65770000"
+      ]
+    ],
+    "buy_price_est": 1782.22
+  },
+  "base_market2": {
+    "symbol": "GMTUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.99000000",
+        "21696.60000000"
+      ]
+    ],
+    "sell_price_est": 0.99,
+    "buy_book": [
+      [
+        "0.98999000",
+        "113.50000000"
+      ]
+    ],
+    "buy_price_est": 0.98999
+  },
+  "swap_market": {
+    "symbol": "GMTETH",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "ETH",
+    "sell_book": [
+      [
+        "0.00056010",
+        "211.30000000"
+      ]
+    ],
+    "sell_price_est": 0.0005601,
+    "buy_book": [
+      [
+        "0.00055930",
+        "803.20000000"
+      ]
+    ],
+    "buy_price_est": 0.0005593
+  },
+  "result_list": [
+    {
+      "price": 0.99324,
+      "in_asset": "USDT",
+      "in_quantity": 14.997924,
+      "out_asset": "GMT",
+      "out_quantity": 15.0849,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0005567,
+      "in_asset": "GMT",
+      "in_quantity": 15,
+      "out_asset": "ETH",
+      "out_quantity": 0.00834215,
+      "direction": "sell"
+    },
+    {
+      "price": 1782.22,
+      "in_asset": "ETH",
+      "in_quantity": 0.0083,
+      "out_asset": "USDT",
+      "out_quantity": 14.77763357,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:ETH<->GMT",
+  "base": "USDT",
+  "swap1": "ETH",
+  "swap2": "GMT",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.011330780635602763,
+  "reverse_diff_ratio": 0.004102945378967746,
+  "base_market1": {
+    "symbol": "ETHUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "ETH",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1784.28000000",
+        "0.98600000"
+      ]
+    ],
+    "sell_price_est": 1784.28,
+    "buy_book": [
+      [
+        "1784.27000000",
+        "15.52070000"
+      ]
+    ],
+    "buy_price_est": 1784.27
+  },
+  "base_market2": {
+    "symbol": "GMTUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.99000000",
+        "274461.70000000"
+      ]
+    ],
+    "sell_price_est": 0.99,
+    "buy_book": [
+      [
+        "0.98996000",
+        "1630.80000000"
+      ]
+    ],
+    "buy_price_est": 0.98996
+  },
+  "swap_market": {
+    "symbol": "GMTETH",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "ETH",
+    "sell_book": [
+      [
+        "0.00055950",
+        "195.00000000"
+      ]
+    ],
+    "sell_price_est": 0.0005595,
+    "buy_book": [
+      [
+        "0.00055880",
+        "202.60000000"
+      ]
+    ],
+    "buy_price_est": 0.0005588
+  },
+  "result_list": [
+    {
+      "price": 0.99176,
+      "in_asset": "USDT",
+      "in_quantity": 14.975576,
+      "out_asset": "GMT",
+      "out_quantity": 15.0849,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0005547,
+      "in_asset": "GMT",
+      "in_quantity": 15,
+      "out_asset": "ETH",
+      "out_quantity": 0.00831218,
+      "direction": "sell"
+    },
+    {
+      "price": 1784.27,
+      "in_asset": "ETH",
+      "in_quantity": 0.0083,
+      "out_asset": "USDT",
+      "out_quantity": 14.79463156,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->CAKE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "CAKE",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0018061793117688297,
+  "reverse_diff_ratio": -0.009832937257958464,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "29500.00000000",
+        "80.49498000"
+      ]
+    ],
+    "sell_price_est": 29500,
+    "buy_book": [
+      [
+        "29499.99000000",
+        "0.00121000"
+      ]
+    ],
+    "buy_price_est": 29499.99
+  },
+  "base_market2": {
+    "symbol": "CAKEUSDT",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "4.31000000",
+        "14.23000000"
+      ]
+    ],
+    "sell_price_est": 4.31,
+    "buy_book": [
+      [
+        "4.30700000",
+        "142.08000000"
+      ]
+    ],
+    "buy_price_est": 4.307
+  },
+  "swap_market": {
+    "symbol": "CAKEBTC",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00014530",
+        "126.80000000"
+      ]
+    ],
+    "sell_price_est": 0.0001453,
+    "buy_book": [
+      [
+        "0.00014510",
+        "612.30000000"
+      ]
+    ],
+    "buy_price_est": 0.0001451
+  },
+  "result_list": [
+    {
+      "price": 29645.73,
+      "in_asset": "USDT",
+      "in_quantity": 14.822865,
+      "out_asset": "BTC",
+      "out_quantity": 0.0004995,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0001454,
+      "in_asset": "BTC",
+      "in_quantity": 0.00049872,
+      "out_asset": "CAKE",
+      "out_quantity": 3.4265700000000003,
+      "direction": "buy"
+    },
+    {
+      "price": 4.302,
+      "in_asset": "CAKE",
+      "in_quantity": 3.42,
+      "out_asset": "USDT",
+      "out_quantity": 14.69812716,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->DOGE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "DOGE",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0023854382915254745,
+  "reverse_diff_ratio": -0.012147007538215177,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "29500.00000000",
+        "80.49498000"
+      ]
+    ],
+    "sell_price_est": 29500,
+    "buy_book": [
+      [
+        "29499.99000000",
+        "0.00121000"
+      ]
+    ],
+    "buy_price_est": 29499.99
+  },
+  "base_market2": {
+    "symbol": "DOGEUSDT",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "DOGE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.08009000",
+        "92904.00000000"
+      ]
+    ],
+    "sell_price_est": 0.08009,
+    "buy_book": [
+      [
+        "0.08008000",
+        "33412.00000000"
+      ]
+    ],
+    "buy_price_est": 0.08008
+  },
+  "swap_market": {
+    "symbol": "DOGEBTC",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "DOGE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00000270",
+        "487107.00000000"
+      ]
+    ],
+    "sell_price_est": 0.0000027,
+    "buy_book": [
+      [
+        "0.00000269",
+        "1268861.00000000"
+      ]
+    ],
+    "buy_price_est": 0.00000269
+  },
+  "result_list": [
+    {
+      "price": 29645.73,
+      "in_asset": "USDT",
+      "in_quantity": 14.822865,
+      "out_asset": "BTC",
+      "out_quantity": 0.0004995,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00000271,
+      "in_asset": "BTC",
+      "in_quantity": 0.00049864,
+      "out_asset": "DOGE",
+      "out_quantity": 183.816,
+      "direction": "buy"
+    },
+    {
+      "price": 0.07998,
+      "in_asset": "DOGE",
+      "in_quantity": 183,
+      "out_asset": "USDT",
+      "out_quantity": 14.621703660000001,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFI",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFI",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.0030366782612243526,
+  "reverse_diff_ratio": -0.011121358582998652,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "29500.00000000",
+        "685.28650000"
+      ]
+    ],
+    "sell_price_est": 29500,
+    "buy_book": [
+      [
+        "29499.99000000",
+        "0.00121000"
+      ]
+    ],
+    "buy_price_est": 29499.99
+  },
+  "base_market2": {
+    "symbol": "YFIUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "YFI",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "7429.64000000",
+        "0.03000000"
+      ]
+    ],
+    "sell_price_est": 7429.64,
+    "buy_book": [
+      [
+        "7422.60000000",
+        "0.03000000"
+      ]
+    ],
+    "buy_price_est": 7422.6
+  },
+  "swap_market": {
+    "symbol": "YFIBTC",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "YFI",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.25010000",
+        "0.00100000"
+      ]
+    ],
+    "sell_price_est": 0.2501,
+    "buy_book": [
+      [
+        "0.24980000",
+        "0.02710000"
+      ]
+    ],
+    "buy_price_est": 0.2498
+  },
+  "result_list": [
+    {
+      "price": 29619.33,
+      "in_asset": "USDT",
+      "in_quantity": 14.809665,
+      "out_asset": "BTC",
+      "out_quantity": 0.0004995,
+      "direction": "buy"
+    },
+    {
+      "price": 0.251,
+      "in_asset": "BTC",
+      "in_quantity": 0.00049949,
+      "out_asset": "YFI",
+      "out_quantity": 0.00198801,
+      "direction": "buy"
+    },
+    {
+      "price": 7406.79,
+      "in_asset": "YFI",
+      "in_quantity": 0.00198,
+      "out_asset": "USDT",
+      "out_quantity": 14.65077876,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFII",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFII",
+  "fee": 0.999,
+  "forward_diff_ratio": 0.001685675940371567,
+  "reverse_diff_ratio": -0.015636825034979297,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "29500.00000000",
+        "685.28650000"
+      ]
+    ],
+    "sell_price_est": 29500,
+    "buy_book": [
+      [
+        "29499.99000000",
+        "0.00121000"
+      ]
+    ],
+    "buy_price_est": 29499.99
+  },
+  "base_market2": {
+    "symbol": "YFIIUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "493.00000000",
+        "1.89030000"
+      ]
+    ],
+    "sell_price_est": 493,
+    "buy_book": [
+      [
+        "492.00000000",
+        "0.03890000"
+      ]
+    ],
+    "buy_price_est": 492
+  },
+  "swap_market": {
+    "symbol": "YFIIBTC",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.01660000",
+        "0.15460000"
+      ]
+    ],
+    "sell_price_est": 0.0166,
+    "buy_book": [
+      [
+        "0.01650000",
+        "2.72340000"
+      ]
+    ],
+    "buy_price_est": 0.0165
+  },
+  "result_list": [
+    {
+      "price": 29578.96,
+      "in_asset": "USDT",
+      "in_quantity": 14.78948,
+      "out_asset": "BTC",
+      "out_quantity": 0.0004995,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0167,
+      "in_asset": "BTC",
+      "in_quantity": 0.00049933,
+      "out_asset": "YFII",
+      "out_quantity": 0.0298701,
+      "direction": "buy"
+    },
+    {
+      "price": 490,
+      "in_asset": "YFII",
+      "in_quantity": 0.0298,
+      "out_asset": "USDT",
+      "out_quantity": 14.587398,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFII",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFII",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.01809439400348424,
+  "reverse_diff_ratio": 0.002284220369864016,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "29680.21000000",
+        "1.51649000"
+      ]
+    ],
+    "sell_price_est": 29680.21,
+    "buy_book": [
+      [
+        "29680.20000000",
+        "2.00465000"
+      ]
+    ],
+    "buy_price_est": 29680.2
+  },
+  "base_market2": {
+    "symbol": "YFIIUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "496.00000000",
+        "1.62950000"
+      ]
+    ],
+    "sell_price_est": 496,
+    "buy_book": [
+      [
+        "494.00000000",
+        "0.72400000"
+      ]
+    ],
+    "buy_price_est": 494
+  },
+  "swap_market": {
+    "symbol": "YFIIBTC",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.01690000",
+        "4.20410000"
+      ]
+    ],
+    "sell_price_est": 0.0169,
+    "buy_book": [
+      [
+        "0.01680000",
+        "0.04760000"
+      ]
+    ],
+    "buy_price_est": 0.0168
+  },
+  "result_list": [
+    {
+      "price": 496,
+      "in_asset": "USDT",
+      "in_quantity": 14.9792,
+      "out_asset": "YFII",
+      "out_quantity": 0.0301698,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0167,
+      "in_asset": "YFII",
+      "in_quantity": 0.0301,
+      "out_asset": "BTC",
+      "out_quantity": 0.00050217,
+      "direction": "sell"
+    },
+    {
+      "price": 29680.2,
+      "in_asset": "BTC",
+      "in_quantity": 0.0005,
+      "out_asset": "USDT",
+      "out_quantity": 14.825259899999999,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFII",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFII",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.01809439400348424,
+  "reverse_diff_ratio": 0.002284220369864016,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "29680.21000000",
+        "1.22125000"
+      ]
+    ],
+    "sell_price_est": 29680.21,
+    "buy_book": [
+      [
+        "29680.20000000",
+        "2.17585000"
+      ]
+    ],
+    "buy_price_est": 29680.2
+  },
+  "base_market2": {
+    "symbol": "YFIIUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "496.00000000",
+        "1.48330000"
+      ]
+    ],
+    "sell_price_est": 496,
+    "buy_book": [
+      [
+        "494.00000000",
+        "0.78400000"
+      ]
+    ],
+    "buy_price_est": 494
+  },
+  "swap_market": {
+    "symbol": "YFIIBTC",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.01690000",
+        "4.20410000"
+      ]
+    ],
+    "sell_price_est": 0.0169,
+    "buy_book": [
+      [
+        "0.01680000",
+        "0.04760000"
+      ]
+    ],
+    "buy_price_est": 0.0168
+  },
+  "result_list": [
+    {
+      "price": 496,
+      "in_asset": "USDT",
+      "in_quantity": 14.9792,
+      "out_asset": "YFII",
+      "out_quantity": 0.0301698,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0167,
+      "in_asset": "YFII",
+      "in_quantity": 0.0301,
+      "out_asset": "BTC",
+      "out_quantity": 0.00050217,
+      "direction": "sell"
+    },
+    {
+      "price": 29680.2,
+      "in_asset": "BTC",
+      "in_quantity": 0.0005,
+      "out_asset": "USDT",
+      "out_quantity": 14.825259899999999,
+      "direction": "sell"
+    }
+  ]
+},
+{
+  "symbol": "USDT:BTC<->YFII",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "YFII",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.01816497993038908,
+  "reverse_diff_ratio": 0.004190105230493941,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "29724.95000000",
+        "4.57674000"
+      ]
+    ],
+    "sell_price_est": 29724.95,
+    "buy_book": [
+      [
+        "29724.94000000",
+        "0.50987000"
+      ]
+    ],
+    "buy_price_est": 29724.94
+  },
+  "base_market2": {
+    "symbol": "YFIIUSDT",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "484.00000000",
+        "34.64180000"
+      ]
+    ],
+    "sell_price_est": 484,
+    "buy_book": [
+      [
+        "483.00000000",
+        "4.80720000"
+      ]
+    ],
+    "buy_price_est": 483
+  },
+  "swap_market": {
+    "symbol": "YFIIBTC",
+    "status": "TRADING",
+    "step_size": 0.0001,
+    "base_asset": "YFII",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.01650000",
+        "1.78690000"
+      ]
+    ],
+    "sell_price_est": 0.0165,
+    "buy_book": [
+      [
+        "0.01640000",
+        "0.04540000"
+      ]
+    ],
+    "buy_price_est": 0.0164
+  },
+  "result_list": [
+    {
+      "price": 484,
+      "in_asset": "USDT",
+      "in_quantity": 14.9556,
+      "out_asset": "YFII",
+      "out_quantity": 0.0308691,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0162,
+      "in_asset": "YFII",
+      "in_quantity": 0.0308,
+      "out_asset": "BTC",
+      "out_quantity": 0.00049644,
+      "direction": "sell"
+    },
+    {
+      "price": 29724.93,
+      "in_asset": "BTC",
+      "in_quantity": 0.00049,
+      "out_asset": "USDT",
+      "out_quantity": 14.55065048,
+      "direction": "sell"
+    }
+  ]
+},

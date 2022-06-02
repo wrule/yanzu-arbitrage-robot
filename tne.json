@@ -1,0 +1,650 @@
+2022-06-01 23:42:43
+Error: Request failed with status code 400
+{
+  "symbol": "USDT:BTC<->SUSHI",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "SUSHI",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.0038501925518939118,
+  "reverse_diff_ratio": -0.007043489490451407,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30780.38000000",
+        "0.07467000"
+      ]
+    ],
+    "sell_price_est": 30780.38,
+    "buy_book": [
+      [
+        "30757.54000000",
+        "0.35911000"
+      ]
+    ],
+    "buy_price_est": 30757.54
+  },
+  "base_market2": {
+    "symbol": "SUSHIUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "SUSHI",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1.71400000",
+        "822.20000000"
+      ]
+    ],
+    "sell_price_est": 1.714,
+    "buy_book": [
+      [
+        "1.71300000",
+        "921.00000000"
+      ]
+    ],
+    "buy_price_est": 1.713
+  },
+  "swap_market": {
+    "symbol": "SUSHIBTC",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "SUSHI",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00005570",
+        "858.10000000"
+      ]
+    ],
+    "sell_price_est": 0.0000557,
+    "buy_book": [
+      [
+        "0.00005550",
+        "423.40000000"
+      ]
+    ],
+    "buy_price_est": 0.0000555
+  },
+  "result_list": []
+},
+2022-06-01 23:42:43
+Error: Request failed with status code 400
+{
+  "symbol": "USDT:BTC<->GMT",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "GMT",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.0014056655814869146,
+  "reverse_diff_ratio": -0.00621252407070358,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30780.38000000",
+        "0.07467000"
+      ]
+    ],
+    "sell_price_est": 30780.38,
+    "buy_book": [
+      [
+        "30757.54000000",
+        "0.35911000"
+      ]
+    ],
+    "buy_price_est": 30757.54
+  },
+  "base_market2": {
+    "symbol": "GMTUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "1.06210000",
+        "151.70000000"
+      ]
+    ],
+    "sell_price_est": 1.0621,
+    "buy_book": [
+      [
+        "1.06146000",
+        "489.50000000"
+      ]
+    ],
+    "buy_price_est": 1.06146
+  },
+  "swap_market": {
+    "symbol": "GMTBTC",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "GMT",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00003443",
+        "237862.10000000"
+      ]
+    ],
+    "sell_price_est": 0.00003443,
+    "buy_book": [
+      [
+        "0.00003442",
+        "344.80000000"
+      ]
+    ],
+    "buy_price_est": 0.00003442
+  },
+  "result_list": [
+    {
+      "price": 1.08195,
+      "in_asset": "USDT",
+      "in_quantity": 14.93091,
+      "out_asset": "GMT",
+      "out_quantity": 13.786200000000001,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00003474,
+      "in_asset": "GMT",
+      "in_quantity": 13.7,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047545,
+      "direction": "sell"
+    },
+    {
+      "price": 31135.18,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047,
+      "out_asset": "USDT",
+      "out_quantity": 14.618901070000001,
+      "direction": "sell"
+    }
+  ]
+},
+2022-06-01 23:42:43
+Error: Request failed with status code 400
+{
+  "symbol": "USDT:BTC<->FTM",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "FTM",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.0024553788668372077,
+  "reverse_diff_ratio": -0.005339485344189257,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30780.38000000",
+        "0.07467000"
+      ]
+    ],
+    "sell_price_est": 30780.38,
+    "buy_book": [
+      [
+        "30757.54000000",
+        "0.35911000"
+      ]
+    ],
+    "buy_price_est": 30757.54
+  },
+  "base_market2": {
+    "symbol": "FTMUSDT",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "FTM",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.38260000",
+        "1000.00000000"
+      ]
+    ],
+    "sell_price_est": 0.3826,
+    "buy_book": [
+      [
+        "0.38250000",
+        "2984.00000000"
+      ]
+    ],
+    "buy_price_est": 0.3825
+  },
+  "swap_market": {
+    "symbol": "FTMBTC",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "FTM",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00001242",
+        "4370.00000000"
+      ]
+    ],
+    "sell_price_est": 0.00001242,
+    "buy_book": [
+      [
+        "0.00001241",
+        "600.00000000"
+      ]
+    ],
+    "buy_price_est": 0.00001241
+  },
+  "result_list": []
+},
+2022-06-01 23:44:17
+Error: Request failed with status code 400
+{
+  "symbol": "USDT:BTC<->TRX",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "TRX",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.007605021682653614,
+  "reverse_diff_ratio": -0.008931666125927933,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30848.46000000",
+        "0.70163000"
+      ]
+    ],
+    "sell_price_est": 30848.46,
+    "buy_book": [
+      [
+        "30632.54000000",
+        "0.17589000"
+      ]
+    ],
+    "buy_price_est": 30632.54
+  },
+  "base_market2": {
+    "symbol": "TRXUSDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "TRX",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.08875000",
+        "14024.00000000"
+      ]
+    ],
+    "sell_price_est": 0.08875,
+    "buy_book": [
+      [
+        "0.08874000",
+        "166.50000000"
+      ]
+    ],
+    "buy_price_est": 0.08874
+  },
+  "swap_market": {
+    "symbol": "TRXBTC",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "TRX",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00000289",
+        "225572.00000000"
+      ]
+    ],
+    "sell_price_est": 0.00000289,
+    "buy_book": [
+      [
+        "0.00000288",
+        "1340096.00000000"
+      ]
+    ],
+    "buy_price_est": 0.00000288
+  },
+  "result_list": [
+    {
+      "price": 30815.59,
+      "in_asset": "USDT",
+      "in_quantity": 14.7914832,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00000288,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047808,
+      "out_asset": "TRX",
+      "out_quantity": 165.834,
+      "direction": "buy"
+    },
+    {
+      "price": 0.08869,
+      "in_asset": "TRX",
+      "in_quantity": 165.8,
+      "out_asset": "USDT",
+      "out_quantity": 14.6900972,
+      "direction": "sell"
+    }
+  ]
+},
+2022-06-01 23:49:42
+Error: Request failed with status code 400
+{
+  "symbol": "USDT:BTC<->C98",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "C98",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.005578467257138158,
+  "reverse_diff_ratio": -0.032290524909718246,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "30845.75000000",
+        "1.36056000"
+      ]
+    ],
+    "sell_price_est": 30845.75,
+    "buy_book": [
+      [
+        "30845.74000000",
+        "2.53035000"
+      ]
+    ],
+    "buy_price_est": 30845.74
+  },
+  "base_market2": {
+    "symbol": "C98USDT",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "C98",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.70900000",
+        "67.00000000"
+      ]
+    ],
+    "sell_price_est": 0.709,
+    "buy_book": [
+      [
+        "0.70700000",
+        "7102.40000000"
+      ]
+    ],
+    "buy_price_est": 0.707
+  },
+  "swap_market": {
+    "symbol": "C98BTC",
+    "status": "TRADING",
+    "step_size": 0.1,
+    "base_asset": "C98",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00002298",
+        "212.90000000"
+      ]
+    ],
+    "sell_price_est": 0.00002298,
+    "buy_book": [
+      [
+        "0.00002231",
+        "288.60000000"
+      ]
+    ],
+    "buy_price_est": 0.00002231
+  },
+  "result_list": [
+    {
+      "price": 30747.98,
+      "in_asset": "USDT",
+      "in_quantity": 14.7590304,
+      "out_asset": "BTC",
+      "out_quantity": 0.00047952,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00002154,
+      "in_asset": "BTC",
+      "in_quantity": 0.00047818,
+      "out_asset": "C98",
+      "out_quantity": 22.177799999999998,
+      "direction": "buy"
+    },
+    {
+      "price": 0.661,
+      "in_asset": "C98",
+      "in_quantity": 22.1,
+      "out_asset": "USDT",
+      "out_quantity": 14.5934919,
+      "direction": "sell"
+    }
+  ]
+},
+2022-06-02 04:57:29
+Error: Request failed with status code 400
+{
+  "symbol": "USDT:BTC<->CAKE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "CAKE",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.0031582587874422075,
+  "reverse_diff_ratio": -0.006913946113320151,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "29578.96000000",
+        "0.40197000"
+      ]
+    ],
+    "sell_price_est": 29578.96,
+    "buy_book": [
+      [
+        "29546.23000000",
+        "0.10910000"
+      ]
+    ],
+    "buy_price_est": 29546.23
+  },
+  "base_market2": {
+    "symbol": "CAKEUSDT",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "4.31000000",
+        "149.98000000"
+      ]
+    ],
+    "sell_price_est": 4.31,
+    "buy_book": [
+      [
+        "4.30600000",
+        "17.05000000"
+      ]
+    ],
+    "buy_price_est": 4.306
+  },
+  "swap_market": {
+    "symbol": "CAKEBTC",
+    "status": "TRADING",
+    "step_size": 0.01,
+    "base_asset": "CAKE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00014560",
+        "421.33000000"
+      ]
+    ],
+    "sell_price_est": 0.0001456,
+    "buy_book": [
+      [
+        "0.00014530",
+        "256.91000000"
+      ]
+    ],
+    "buy_price_est": 0.0001453
+  },
+  "result_list": [
+    {
+      "price": 29645.73,
+      "in_asset": "USDT",
+      "in_quantity": 14.822865,
+      "out_asset": "BTC",
+      "out_quantity": 0.0004995,
+      "direction": "buy"
+    },
+    {
+      "price": 0.0001454,
+      "in_asset": "BTC",
+      "in_quantity": 0.00049872,
+      "out_asset": "CAKE",
+      "out_quantity": 3.4265700000000003,
+      "direction": "buy"
+    },
+    {
+      "price": 4.302,
+      "in_asset": "CAKE",
+      "in_quantity": 3.42,
+      "out_asset": "USDT",
+      "out_quantity": 14.69812716,
+      "direction": "sell"
+    }
+  ]
+},
+2022-06-02 04:57:29
+Error: Request failed with status code 400
+{
+  "symbol": "USDT:BTC<->DOGE",
+  "base": "USDT",
+  "swap1": "BTC",
+  "swap2": "DOGE",
+  "fee": 0.999,
+  "forward_diff_ratio": -0.003980601526193368,
+  "reverse_diff_ratio": -0.00908662176034298,
+  "base_market1": {
+    "symbol": "BTCUSDT",
+    "status": "TRADING",
+    "step_size": 0.00001,
+    "base_asset": "BTC",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "29612.24000000",
+        "0.17683000"
+      ]
+    ],
+    "sell_price_est": 29612.24,
+    "buy_book": [
+      [
+        "29537.00000000",
+        "0.48987000"
+      ]
+    ],
+    "buy_price_est": 29537
+  },
+  "base_market2": {
+    "symbol": "DOGEUSDT",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "DOGE",
+    "quote_asset": "USDT",
+    "sell_book": [
+      [
+        "0.08024000",
+        "49561.00000000"
+      ]
+    ],
+    "sell_price_est": 0.08024,
+    "buy_book": [
+      [
+        "0.08017000",
+        "9552.00000000"
+      ]
+    ],
+    "buy_price_est": 0.08017
+  },
+  "swap_market": {
+    "symbol": "DOGEBTC",
+    "status": "TRADING",
+    "step_size": 1,
+    "base_asset": "DOGE",
+    "quote_asset": "BTC",
+    "sell_book": [
+      [
+        "0.00000271",
+        "206372.00000000"
+      ]
+    ],
+    "sell_price_est": 0.00000271,
+    "buy_book": [
+      [
+        "0.00000270",
+        "1162754.00000000"
+      ]
+    ],
+    "buy_price_est": 0.0000027
+  },
+  "result_list": [
+    {
+      "price": 29645.73,
+      "in_asset": "USDT",
+      "in_quantity": 14.822865,
+      "out_asset": "BTC",
+      "out_quantity": 0.0004995,
+      "direction": "buy"
+    },
+    {
+      "price": 0.00000271,
+      "in_asset": "BTC",
+      "in_quantity": 0.00049864,
+      "out_asset": "DOGE",
+      "out_quantity": 183.816,
+      "direction": "buy"
+    },
+    {
+      "price": 0.07998,
+      "in_asset": "DOGE",
+      "in_quantity": 183,
+      "out_asset": "USDT",
+      "out_quantity": 14.621703660000001,
+      "direction": "sell"
+    }
+  ]
+},

@@ -17,7 +17,7 @@ async function main() {
     },
   };
   const combined_streams = client.combinedStreams(
-    ['btcusdt@@bookTicker'],
+    ['btcusdt@bookTicker'],
     callbacks,
   );
 }

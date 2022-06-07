@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "node dist/index.js",
+    "mini": "node dist/mini_test.js",
     "watch": "tsc -w",
     "build": "tsc"
   },

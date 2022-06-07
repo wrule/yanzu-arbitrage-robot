@@ -38,7 +38,7 @@ async function main() {
           return;
         }
         const now_time = Number(new Date());
-        if (now_time - time > 1000 * 10) {
+        if (now_time - time > 1000 * 60 * 20) {
           time = now_time;
           const json_object = JSON.parse(json_text);
           const data = json_object.data;

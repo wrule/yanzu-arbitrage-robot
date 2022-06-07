@@ -13,7 +13,14 @@ async function main() {
     open: () => { console.log('open') },
     close: () => { console.log('close') },
     message: (json_text: string) => {
-      console.log(json_text);
+      try {
+        const json_object = JSON.parse(json_text);
+        const data = json_object.data;
+        const [ask, bid] = [data.a, data.b];
+        console.log(ask, bid);
+      } catch (e) {
+        console.error(e);
+      }
     },
   };
   const combined_streams = client.combinedStreams(
